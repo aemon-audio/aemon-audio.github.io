@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aemon Suite</title>
+<meta name="description" content="Four free, open-source mixing and mastering plugins for Windows: Utility, EQ, Compressor and Limiter. VST3. No account, no trial, no limits.">
+<meta name="theme-color" content="#14151a">
+<link rel="icon" href="favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aemon Suite: free mixing and mastering plugins">
+<meta property="og:description" content="Utility, EQ, Compressor and Limiter. Free, open source, VST3 for Windows.">
+<meta property="og:image" content="https://aemon-audio.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 100 100"><path d="M26.9 77.6A36 36 0 1 1 73.1 77.6" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><circle cx="50" cy="31" r="8.5" fill="#f0a35b"/></symbol></svg>
+
+<header class="nav"><div class="w">
+  <a class="logo" href="#top" aria-label="Aemon, top of page"><svg><use href="#mark"/></svg>AEMON</a>
+  <nav aria-label="Sections"><a href="#listen">Listen</a><a href="#plugins">Plugins</a><a href="#measured">Measured</a><a href="#install">Install</a><a href="#why">Why free</a><a href="#faq">Questions</a></nav>
+  <a class="cta sm" href="#download">Download</a>
+</div></header>
+
+<main id="main">
+<div class="hero" id="top"><div class="w">
+  <div class="top">
+    <h1>Rough mix to finished record.</h1>
+    <div class="side">
+      <p class="lede">Utility, EQ, Compressor and Limiter. Four precise plugins for mixing and mastering, built to the standard of paid tools and given away complete.</p>
+      <div class="acts">
+        <a class="cta" href="#download"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download free</a>
+        <a class="ghost" href="#listen"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z"/></svg>Hear it first</a>
+      </div>
+      <p class="fine">Windows 10 and 11, 64-bit. VST3.</p>
+    </div>
+  </div>
+  <div class="stage">
+    <div class="win l"><img src="assets/img/compressor-pro-s.webp" width="1100" height="688" alt=""></div>
+    <div class="win r"><img src="assets/img/limiter-pro-s.webp" width="1100" height="688" alt=""></div>
+    <div class="win mid"><img src="assets/img/eq-pro.webp" width="1920" height="1200" alt="Aemon EQ in Pro mode, with six bands on a live spectrum" fetchpriority="high"></div>
+  </div>
+  <nav class="chain" aria-label="The four plugins">
+    <a href="#utility"><b>Utility</b><span>Level, width, phase and loudness, sorted before you start.</span></a>
+    <a href="#eq"><b>EQ</b><span>Sixteen bands that match the analogue curve up to 20 kHz.</span></a>
+    <a href="#compressor"><b>Compressor</b><span>Punch, glue or control, with the level matched for you.</span></a>
+    <a href="#limiter"><b>Limiter</b><span>Loud and safe, with true peaks that hold.</span></a>
+  </nav>
+</div></div>
+
+<section id="listen"><div class="w">
+  <div class="sh">
+    <h2>Same loudness. Now compare.</h2>
+    <p class="lede">Louder always sounds better, so most demos cheat. Here both sides play equally loud. Turn matching off to hear what really happened to the level.</p>
+  </div>
+  <div class="console" id="console">
+    <div class="tabs" role="tablist" aria-label="Choose a demo" id="tabs"></div>
+    <div class="screen"><canvas id="scope" aria-label="Waveform of the clip. Click to jump."></canvas><div class="cap"><span class="lb" id="scopeL">Before</span><span class="lb" id="scopeR">Press play</span></div></div>
+    <div class="deck">
+      <button class="play" id="play" aria-label="Play"><svg viewBox="0 0 24 24"><path id="playIcon" d="M6 3l15 9-15 9z"/></svg></button>
+      <div class="ab" role="group" aria-label="Compare"><button class="bf" id="abB" aria-pressed="false">Before</button><button id="abA" aria-pressed="true">After</button></div>
+      <label class="sw" for="match"><input type="checkbox" id="match" checked><i></i><span>Match loudness</span></label>
+    </div>
+    <div class="notes"><p id="note"></p><dl id="meters"></dl></div>
+  </div>
+  <p class="under">The music was written for this page. The processing was done by the same engines that run inside the plugins, with the settings shown. Press X to switch while it plays.</p>
+</div></section>
+
+<div id="plugins">
+<section class="plug" id="utility"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Utility</p><h2>Find the problem before it costs you the mix.</h2><p class="lede">Put it first on any channel, or last on the master. It tells you in one line whether the track is mono-safe, balanced, clean and on target, and fixes what isn’t.</p></div>
+    <div class="seg" role="group" aria-label="Utility view"><button aria-pressed="true" data-m="simple">Simple</button><button aria-pressed="false" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="simple"><img src="assets/img/utility-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Utility, Simple mode: a live mix check, a stereo field and a loudness dial"><img src="assets/img/utility-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Utility, Pro mode: meters, stereo field, loudness and every control"></figure>
+  <div class="feat">
+    <div><h3>A mix check that talks</h3><p>Mono safety, headroom, balance and loudness, in plain words and live. When something is off, the button to fix it is right there.</p></div>
+    <div><h3>A stereo field you can grab</h3><p>Drag the arc to pan and widen while you watch the phase correlation. Bass mono keeps the low end in the centre.</p></div>
+    <div><h3>Loudness you can trust</h3><p>Momentary, short-term, integrated and true peak to BS.1770, with streaming, club and broadcast targets.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">At default</span><span class="num">Bit-exact</span></div><div><span class="lb">Latency</span><span class="num">0 samples</span></div><div><span class="lb">Gain</span><span class="num">±36 dB</span></div><div><span class="lb">Width</span><span class="num">0–200 %</span></div><div><span class="lb">Presets</span><span class="num">34</span></div></div>
+</div></section>
+
+<section class="plug" id="eq"><div class="w">
+  <div class="ph"><div><p class="name">Aemon EQ</p><h2>The top end goes where you put it.</h2><p class="lede">Most digital EQs squeeze their curves near 20 kHz. This one matches the analogue shape all the way up, with zero latency, and goes linear-phase when you need it.</p></div>
+    <div class="seg" role="group" aria-label="EQ view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/eq-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon EQ, Simple mode: five tone controls, a tone balance and one-click helpers"><img src="assets/img/eq-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon EQ, Pro mode: spectrum, curve and the full band controls"></figure>
+  <div class="feat">
+    <div><h3>Bands that only act when needed</h3><p>Make any band dynamic and it moves only when its own range gets too loud. Tame a harsh note without dulling the rest.</p></div>
+    <div><h3>Work in the sides, or one side</h3><p>Put each band on stereo, left, right, mid or side. Clean the bass out of the sides, or open the top without touching the voice.</p></div>
+    <div><h3>Helpers that listen</h3><p>Tame harsh spots and clean up mud in one click, then hear the result at the same loudness with auto gain.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Bands</span><span class="num">16</span></div><div><span class="lb">Shapes</span><span class="num">8</span></div><div><span class="lb">Cut slopes</span><span class="num">12–96 dB/oct</span></div><div><span class="lb">Phase</span><span class="num">Zero latency or linear</span></div><div><span class="lb">Presets</span><span class="num">52</span></div></div>
+</div></section>
+
+<section class="plug" id="compressor"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Compressor</p><h2>Hear the punch. Not the level trick.</h2><p class="lede">Clean compression with a display you can grab. Auto level keeps the output as loud as the input, so you judge the compression and nothing else.</p></div>
+    <div class="seg" role="group" aria-label="Compressor view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/compressor-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Compressor, Simple mode: amount, style and a live compression check"><img src="assets/img/compressor-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Compressor, Pro mode: level and gain reduction history, transfer curve and every control"></figure>
+  <div class="feat">
+    <div><h3>One amount, five styles</h3><p>Gentle, Punchy, Glue, Vocal and Smash. Turn one knob and read whether it’s subtle, healthy or too much.</p></div>
+    <div><h3>Room to catch the peak</h3><p>Up to 10 ms of lookahead, peak or RMS detection, auto release, and a side-chain high-pass so the kick stops driving everything.</p></div>
+    <div><h3>External side-chain and mix</h3><p>Duck the bass under the kick or the music under a voice. Blend in the dry signal for parallel compression in place.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Ratio</span><span class="num">1:1 to ∞</span></div><div><span class="lb">Attack</span><span class="num">0.1–100 ms</span></div><div><span class="lb">Lookahead</span><span class="num">0–10 ms</span></div><div><span class="lb">Distortion, 1 kHz</span><span class="num">0.0000 %</span></div><div><span class="lb">Presets</span><span class="num">31</span></div></div>
+</div></section>
+
+<section class="plug" id="limiter"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Limiter</p><h2>Loud enough. Never too far.</h2><p class="lede">Pick a target, press one button, and it pushes until the sound would start to suffer. Then it stops. The ceiling holds between the samples too.</p></div>
+    <div class="seg" role="group" aria-label="Limiter view"><button aria-pressed="true" data-m="simple">Simple</button><button aria-pressed="false" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="simple"><img src="assets/img/limiter-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Limiter, Simple mode: loudness target, push, ceiling and a master check"><img src="assets/img/limiter-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Limiter, Pro mode: loudness readings, release styles, true peak and dither"></figure>
+  <div class="feat">
+    <div><h3>Make it loud, safely</h3><p>Streaming, club, broadcast or as loud as it stays clean. It measures your track, sets the push, and won’t crush it to reach a number.</p></div>
+    <div><h3>It checks its own output</h3><p>A second stage measures the limited signal with the official meter filter and trims the last tenths, so converters and codecs don’t clip.</p></div>
+    <div><h3>Compare at equal loudness</h3><p>One button plays the limited sound as quietly as the original, so bypass compares sound, never volume. Exports ignore it.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">True peak</span><span class="num">2×, 4×, 8×</span></div><div><span class="lb">Latency, default</span><span class="num">2.0 ms</span></div><div><span class="lb">Styles</span><span class="num">4</span></div><div><span class="lb">Dither</span><span class="num">16 and 24-bit</span></div><div><span class="lb">Presets</span><span class="num">15</span></div></div>
+</div></section>
+</div>
+
+<section id="modes"><div class="w">
+  <div class="sh"><h2>Two ways in. One sound.</h2><p class="lede">Every plugin has a Simple and a Pro side. They share the same settings, so switching never changes what you hear. Drag across.</p></div>
+  <div class="wipe" id="wipe"><div class="win"><img src="assets/img/eq-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon EQ in Pro mode"><img class="top-img" src="assets/img/eq-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon EQ in Simple mode"></div><input type="range" id="wipeR" min="4" max="96" value="52" aria-label="Reveal Simple or Pro"><div class="bar"></div></div>
+  <div class="two"><div><h3>Simple, on the left</h3><p>A few big controls, live checks in plain language and one-click fixes that stay safe. For when you want the result.</p></div><div><h3>Pro, on the right</h3><p>Every parameter, every meter, every routing option, all automatable. For when you know exactly what you’re after.</p></div></div>
+</div></section>
+
+<div class="band" id="measured"><div class="w">
+  <div class="sh"><h2>Measured, then released.</h2><p class="lede">Nothing here is a slogan. These figures come from the automated tests that run on every build, and the tests are public with the code.</p></div>
+  <div class="charts">
+    <div><h3>An EQ curve that stays in shape</h3><p>A +9 dB bell at 13 kHz, 48 kHz session. Aemon stays within 0.2 dB of the analogue curve. The textbook digital filter ends 4.4 dB away.</p><div id="chartEq"></div><div class="leg"><span><i style="color:#ede7dc;border-top-style:dashed"></i>Analogue</span><span><i style="color:#f0a35b"></i>Aemon EQ</span><span><i style="color:#8b8e9b"></i>Textbook digital</span></div></div>
+    <div><h3>A ceiling that holds between samples</h3><p>Highest true peak over 108 limiter setups per signal, ceiling at −1.0 dBTP. The grey bars are how far peaks escape when a limiter only watches samples. Above 0 can clip.</p><div id="chartTp"></div><div class="leg"><span><i style="color:#646877;border-top-width:9px"></i>Same limiter, sample peaks only</span><span><i style="color:#f0a35b;border-top-width:9px"></i>Aemon, true peak on</span></div></div>
+  </div>
+  <div class="tbl"><table><thead><tr><th>What</th><th>How it’s tested</th><th>Result</th></tr></thead><tbody>
+    <tr><td>Untouched means untouched</td><td>All four at neutral (the Limiter with peaks under its ceiling), 44.1 to 192 kHz, mono and stereo</td><td>Bit-exact</td></tr>
+    <tr><td>Loudness meter</td><td>1 kHz at −23 dBFS should read −23 LUFS, three sample rates</td><td>within 0.01 LU</td></tr>
+    <tr><td>Compressor attack</td><td>Set to 10 ms, measured to the 63 % point</td><td>9.98 ms</td></tr>
+    <tr><td>Compressor lookahead</td><td>First peak after silence, with and without 5 ms of lookahead</td><td>16.2 → 0.1 dB over</td></tr>
+    <tr><td>Auto level</td><td>Loudness change after settling, 12 dB of compression</td><td>0.02 dB</td></tr>
+    <tr><td>Make it loud safely</td><td>Asked for −14 LUFS on a quiet mix, then measured playing</td><td>−14.06 LUFS</td></tr>
+    <tr><td>Limiter release</td><td>Set to 100 ms, auto release off</td><td>100.0 ms</td></tr>
+    <tr><td>Switching anything</td><td>Polarity, gain, threshold, ceiling and bypass, changed during playback</td><td>No clicks</td></tr>
+    <tr><td>Plugin stability</td><td>pluginval, the industry host test, at its strictest level, all four plugins</td><td>10 / 10</td></tr>
+  </tbody></table></div>
+</div></div>
+
+<section id="presets"><div class="w"><div class="pre">
+  <div class="sh" style="margin:0"><h2>132 presets that say what they do.</h2><p class="lede">No “Magic Glue 3”. Every preset is named after the result, with one line that tells you how it gets there. The plugin shows it when you load it.</p></div>
+  <ul class="plist" id="plist"></ul>
+</div></div></section>
+
+<section id="every"><div class="w">
+  <div class="sh"><h2>The details, in all four.</h2></div>
+  <div class="every">
+    <div><svg viewBox="0 0 34 34"><path d="M4 12h9M4 22h9"/><path class="e" d="M21 12h9M21 22h9"/><path d="M17 6v22"/></svg><h3>A/B and undo</h3><p>Two full settings to compare, and every move can be taken back.</p></div>
+    <div><svg viewBox="0 0 34 34"><rect x="4" y="8" width="26" height="18" rx="3"/><path class="e" d="M22 21l4 0 0-4"/></svg><h3>Any size, always sharp</h3><p>Drag the corner from 60 to 200 %. Everything is drawn, nothing is a picture.</p></div>
+    <div><svg viewBox="0 0 34 34"><path d="M6 25a13 13 0 1 1 22 0"/><path class="e" d="M17 18l5-7"/></svg><h3>Hands on everything</h3><p>Drag, fine-tune with Shift, scroll, double-click to reset, or type the number.</p></div>
+    <div><svg viewBox="0 0 34 34"><path d="M5 8h24v14H15l-6 5v-5H5z"/><path class="e" d="M11 13h12M11 17h8"/></svg><h3>Help on hover</h3><p>Point at any control and the strip below explains it in a sentence.</p></div>
+    <div><svg viewBox="0 0 34 34"><path d="M3 21c4 0 4-9 8-9s4 14 8 14 4-9 12-9" /><path class="e" d="M3 29h28"/></svg><h3>Click-free automation</h3><p>Every control is smoothed and can be automated from your DAW.</p></div>
+    <div><svg viewBox="0 0 34 34"><path d="M17 4v26M4 17h26"/><circle class="e" cx="17" cy="17" r="7"/></svg><h3>44.1 to 192 kHz</h3><p>Mono and stereo, tested at every common sample rate.</p></div>
+    <div><svg viewBox="0 0 34 34"><rect x="6" y="6" width="22" height="22" rx="3"/><path class="e" d="M12 20v-4M17 20v-8M22 20v-6"/></svg><h3>Light on the CPU</h3><p>Utility and Compressor use under 1 % of one core. The Limiter about 3 % at 8×.</p></div>
+    <div><svg viewBox="0 0 34 34"><path d="M17 4l11 4v8c0 7-5 11-11 14C11 27 6 23 6 16V8z"/><path class="e" d="M12 17l4 4 7-8"/></svg><h3>No account, no phoning home</h3><p>Nothing to register, nothing collected, works offline forever.</p></div>
+  </div>
+</div></section>
+
+<section id="why"><div class="w"><div class="letter">
+  <h2>For the love of the game.</h2>
+  <div class="body">
+    <p>I make music, and I’ve paid for plenty of plugins. Too many of them were a pretty window with a mystery inside.</p>
+    <p>So I built the ones I wanted. <strong>They look like gear, they tell you the truth, and they explain themselves.</strong> If you’re starting out, Simple mode gets you there without a manual. If you’ve done this for twenty years, Pro mode stays out of your way.</p>
+    <p>They’re free because I want everyone to have them. No trial, no lite version, no email first. The code is open too, so anyone can check how they work, learn from them, or make them better.</p>
+    <p>If you make something with them, I’d love to hear it.</p>
+    <div class="reach">
+      <a class="ghost" href="https://www.instagram.com/theaymene" rel="me noopener"><svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2" y="2" width="14" height="14" rx="4"/><circle cx="9" cy="9" r="3.4"/><circle cx="13" cy="5" r=".6"/></svg>@theaymene</a>
+      <a class="ghost" href="#why" id="mail" data-link="mail"><svg viewBox="0 0 18 18" aria-hidden="true"><rect x="2" y="3.5" width="14" height="11" rx="2"/><path d="M2.5 5l6.5 5 6.5-5"/></svg>Email</a>
+    </div>
+  </div>
+</div></div></section>
+
+<section id="download"><div class="w"><div class="dl">
+  <div>
+    <h2>One installer. All four.</h2>
+    <p class="lede" style="margin-top:18px">Tick what you want, or keep everything. It installs to the standard VST3 folder, updates over itself, and uninstalls cleanly. It never closes your DAW, and your own presets stay yours.</p>
+    <div class="acts"><a class="cta" href="#download" data-link="setup"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download Aemon Suite</a><a class="ghost" href="#download" data-link="zip">ZIP, without installer</a></div>
+    <p class="fine">Windows 10 or 11, 64-bit. Any VST3 host. Free, AGPL-3.0. <a href="guide.html">Read the guide</a></p>
+    <ol class="steps">
+      <li><b>Run the installer</b><span>Close your DAW first. Windows will ask twice, because Aemon isn’t signed yet. <a href="#install">See what to press</a></span></li>
+      <li><b>Rescan plugins</b><span>Open your DAW’s plugin manager and scan for new plugins.</span></li>
+      <li><b>Load Aemon</b><span>Look for Aemon Utility, EQ, Compressor and Limiter in the effects list.</span></li>
+    </ol>
+  </div>
+  <div class="setup" aria-label="Preview of the installer, with the four plugins ticked">
+    <div class="t"><svg><use href="#mark"/></svg>Aemon Suite Setup</div>
+    <div class="b"><h3>Choose your plugins</h3><p>All four are selected. They work on their own or together.</p>
+      <label for="i1"><input type="checkbox" id="i1" checked><b>Aemon Utility</b><span>level, width, phase</span></label>
+      <label for="i2"><input type="checkbox" id="i2" checked><b>Aemon EQ</b><span>sixteen bands</span></label>
+      <label for="i3"><input type="checkbox" id="i3" checked><b>Aemon Compressor</b><span>punch and glue</span></label>
+      <label for="i4"><input type="checkbox" id="i4" checked><b>Aemon Limiter</b><span>loud and safe</span></label>
+    </div>
+    <div class="f"><span id="setupCount">4 plugins selected</span><b>Install</b></div>
+  </div>
+</div></div></section>
+
+<section id="install"><div class="w">
+  <div class="sh"><h2>Why Windows asks, and what to press.</h2><p class="lede">Aemon isn’t signed yet. A signature is a certificate that tells Windows who made a file, and ours is coming soon. Until then Windows shows two warnings. Here is each one, and why it’s there.</p></div>
+  <div class="warns">
+    <figure>
+      <div class="dlg blue" role="img" aria-label="Drawing of the first warning: Windows protected your PC, with More info and Run anyway highlighted"><p class="dt">Windows protected your PC</p><p>Windows SmartScreen prevented an unrecognised app from starting.</p><p class="mi"><mark>More info</mark></p><p class="dm">App: Aemon-Suite-Setup.exe<br>Publisher: Unknown publisher</p><div class="db"><mark>Run anyway</mark><span>Don’t run</span></div></div>
+      <figcaption><h3>1. “Windows protected your PC”</h3><p>Press <b>More info</b>, then <b>Run anyway</b>. Windows shows this for any new app that few people have installed and that has no signature. It means it doesn’t know the file yet. It doesn’t mean it found something bad.</p></figcaption>
+    </figure>
+    <figure>
+      <div class="dlg" role="img" aria-label="Drawing of the second prompt: Do you want to allow this app to make changes to your device, with Yes highlighted"><p class="dk">User Account Control</p><p class="dt">Do you want to allow this app from an unknown publisher to make changes to your device?</p><p class="dm">Aemon-Suite-Setup.exe<br>Publisher: Unknown</p><div class="db"><mark>Yes</mark><span>No</span></div></div>
+      <figcaption><h3>2. “Make changes to your device?”</h3><p>Press <b>Yes</b>. Plugins go in the VST3 folder that every DAW on the computer shares, and only an administrator may write there. “Unknown publisher” appears because of the missing signature. Setup adds the plugins, their uninstaller, and nothing else.</p></figcaption>
+    </figure>
+  </div>
+  <div class="facts">
+    <div><h3>If your browser stops the download</h3><p>It may say the file isn’t downloaded often. Open the download’s menu and choose <b>Keep</b>.</p></div>
+    <div><h3>Signing is coming soon</h3><p>We’ll apply for free open-source signing as soon as the code is public. Windows may still ask for a few weeks after that, until enough people have installed it.</p></div>
+    <div><h3>Check it’s the real file</h3><p>Every release lists a SHA-256 checksum. Compare it with yours before you run anything. <a href="signing.html">How to do it</a></p></div>
+  </div>
+</div></section>
+
+<section id="faq"><div class="w"><div class="faq">
+  <h2>Questions, answered.</h2>
+  <div>
+    <details open><summary>What’s the catch?</summary><p>There isn’t one. The full plugins are free, for personal and paid work, with no time limit and no watermark. What you make with them belongs to you.</p></details>
+    <details><summary>Will it work in my DAW?</summary><p>If your DAW loads 64-bit VST3 plugins on Windows, yes. That covers most of them.</p></details>
+    <details><summary>Is there a Mac version?</summary><p>Not yet. The plugins are written to run on macOS too, and a Mac version (VST3 and AU) is planned after the Windows release.</p></details>
+    <details><summary>Why does Windows warn me when I install?</summary><p>Because the installer isn’t signed yet, and because it’s new. Signing is coming soon. <a href="#install">This is what you’ll see and what to press.</a> Only download Aemon from this page or from the project’s GitHub releases.</p></details>
+    <details><summary>Do the plugins collect anything?</summary><p>No. They never connect to the internet. This page has no cookies and no tracking either.</p></details>
+    <details><summary>Can I read or change the code?</summary><p>Yes. Aemon is open source under the AGPL-3.0 licence. You can study it, build it yourself, and share your changes under the same licence.</p></details>
+    <details><summary>What comes next?</summary><p>Saturation, de-esser, stereo imager, multiband compressor and reverb, one at a time, each tested like these.</p></details>
+  </div>
+</div></div></section>
+
+<div class="end"><div class="w"><h2>Finish the one you’re working on.</h2><a class="cta" href="#download"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download free</a><p class="fine">Four plugins. Nothing to pay, now or later.</p></div></div>
+</main>
+
+<footer><div class="w">
+  <div class="row">
+    <a class="logo" href="#top"><svg><use href="#mark"/></svg>AEMON</a>
+    <div><span class="lb">Plugins</span><ul><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#limiter">Limiter</a></li></ul></div>
+    <div><span class="lb">Help</span><ul><li><a href="#install">Install</a></li><li><a href="#faq">Questions</a></li><li><a href="guide.html">User guide</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+    <div><span class="lb">Open source</span><ul><li><a href="#download" data-link="repo">Source code</a></li><li><a href="#download" data-link="issues">Report a problem</a></li><li><a href="signing.html">Code signing and privacy</a></li></ul></div>
+    <div><span class="lb">Say hello</span><ul><li><a href="https://www.instagram.com/theaymene" rel="me noopener">Instagram @theaymene</a></li><li><a href="#why" data-link="mail">Email</a></li></ul></div>
+  </div>
+  <p class="legal">Aemon is free software under the GNU AGPL v3 or later, built with JUCE. Typefaces: Unbounded and IBM Plex, SIL Open Font License. VST is a trademark of Steinberg Media Technologies GmbH. This site collects nothing.</p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script src="config.js"></script>
+<script src="data.js"></script>
+<script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aemon User Guide</title>
+<meta name="description" content="How to install and use Aemon Utility, EQ, Compressor and Limiter.">
+<meta name="theme-color" content="#14151a">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 100 100"><path d="M26.9 77.6A36 36 0 1 1 73.1 77.6" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><circle cx="50" cy="31" r="8.5" fill="#f0a35b"/></symbol></svg>
+<header class="nav"><div class="w"><a class="logo" href="index.html" aria-label="Aemon home"><svg><use href="#mark"/></svg>AEMON</a><nav aria-label="Guide"><a href="#install">Install</a><a href="#utility">Utility</a><a href="#eq">EQ</a><a href="#compressor">Compressor</a><a href="#limiter">Limiter</a></nav><a class="cta sm" href="index.html#download">Download</a></div></header>
+<main id="main" class="w doc">
+<div class="dochead"><h1>User guide</h1><p class="lede">Everything you need to install the plugins and use them well. Each plugin also explains itself: point at a control and read the strip at the bottom.</p></div>
+<div class="docgrid">
+<aside class="toc" aria-label="Contents"><ul><li><a href="#install">Install</a></li><li><a href="#basics">The basics, in all four</a></li><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#limiter">Limiter</a></li><li><a href="#order">A good order</a></li><li><a href="#trouble">If something’s wrong</a></li></ul></aside>
+<article>
+
+<h2 id="install">Install</h2>
+<ol><li>Close your DAW and run <b>Aemon-Suite-Setup.exe</b>.</li><li>If Windows says it protected your PC, choose <b>More info</b>, then <b>Run anyway</b>.</li><li>When Windows asks to allow changes to your device, choose <b>Yes</b>.</li><li>Tick the plugins you want and press <b>Install</b>.</li><li>Open your DAW, scan for new plugins, and look for Aemon in the effects list.</li></ol>
+<p><b>Why the warnings?</b> Aemon isn’t signed yet, so Windows can’t show who made it, and it warns about any new app that few people have installed. The second question is there because plugins go in a folder shared by every DAW on the computer. Signing is coming soon. <a href="index.html#install">See pictures of both</a></p>
+<p>The plugins go to <code>C:\Program Files\Common Files\VST3</code>, where every VST3 host looks. To update, run the newer installer. To remove them, use Windows Settings, Apps, <b>Aemon Suite</b>. Your own presets are never touched.</p>
+<p><b>No administrator rights?</b> Run <code>Aemon-Suite-Setup.exe /CURRENTUSER</code>. It installs to the per-user VST3 folder, which many DAWs also scan.</p>
+<p><b>By hand:</b> unpack the ZIP and copy the <code>.vst3</code> folders to the folder above.</p>
+
+<h2 id="basics">The basics, in all four</h2>
+<h3>Simple and Pro</h3>
+<p>Switch at the top of the window. Both show the same settings, so switching never changes the sound. Simple has a few big controls, live checks in plain words and one-click fixes. Pro has everything.</p>
+<h3>Knobs and numbers</h3>
+<p>Drag up and down. Hold <kbd>Shift</kbd> for fine moves. Double-click to reset. Scroll to nudge. Click a number to type it.</p>
+<h3>Presets</h3>
+<p>Every preset is named after what it does. Use the arrows to step through, or click the name for the list. <b>Save</b> keeps your own, as files in <code>Documents\Aemon</code>. The word <i>edited</i> means you’ve changed something since loading.</p>
+<h3>Compare and undo</h3>
+<p><b>A</b> and <b>B</b> hold two full settings, and <b>A›B</b> copies one across. Undo and redo are the arrows, or <kbd>Ctrl</kbd> <kbd>Z</kbd> and <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>Z</kbd>.</p>
+<h3>Size and bypass</h3>
+<p>Click the percentage or drag the corner, from 60 to 200 %. The round button bypasses without a click.</p>
+
+<h2 id="utility">Utility</h2>
+<img src="assets/img/utility-simple.webp" width="1920" height="1200" alt="Aemon Utility, Simple mode" loading="lazy">
+<p>For level, stereo, phase and loudness. It never colours the sound: at its defaults, what comes out is bit for bit what went in.</p>
+<h3>Simple</h3>
+<p><b>Mix check</b> watches the output and tells you whether it’s mono-safe, has headroom, is balanced and sits on your loudness target. When something is off, its button fixes it. <b>Match target loudness</b> sets Volume and stops before peaks pass −1 dBFS. <b>Check in mono</b> lets you hear what a phone or a mono club system plays. <b>Fix phase problem</b> lights up when left and right cancel each other.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Gain, Pan, Width</dt><dd>±36 dB, four pan laws (0, −3, −4.5, −6 dB), and 0 to 200 % width.</dd><dt>Mono, Swap, Ø</dt><dd>Sum to mono, swap sides, or flip the polarity of either side.</dd><dt>Mid / Side</dt><dd>Listen to what both sides share, or only the difference. Encode and decode M/S for other plugins in between.</dd><dt>Bass mono</dt><dd>Everything below the chosen frequency becomes mono. The centre isn’t touched.</dd><dt>Loudness</dt><dd>Momentary, short-term, integrated and true peak to BS.1770, measured on the input or the output.</dd></dl>
+
+<h2 id="eq">EQ</h2>
+<img src="assets/img/eq-pro.webp" width="1920" height="1200" alt="Aemon EQ, Pro mode" loading="lazy">
+<p>Sixteen bands on a live spectrum. Double-click the display to add a band, drag it to set frequency and gain, scroll over it to change its width.</p>
+<h3>Simple</h3>
+<p>Low cut, Bass, Mud, Presence and Air, with a tone balance that compares your sound with a typical mix, vocal or bass. <b>Tame harsh spots</b> finds narrow peaks and places gentle dynamic cuts. <b>Clean up mud</b> finds where the low mids pile up.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Shapes</dt><dd>Bell, shelves, cuts, notch, band pass and tilt. Cuts go from 12 to 96 dB per octave.</dd><dt>Dynamic</dt><dd>The band only acts when its own range gets louder than the threshold. Good for harsh words or a boomy note.</dd><dt>Placement</dt><dd>Stereo, left, right, mid or side, per band.</dd><dt>Phase</dt><dd><b>Zero</b> has no latency and is the default. <b>Linear</b> keeps timing between frequencies, and adds about 91 ms (medium) or 176 ms (high). Use it in mastering, rather than while you play.</dd><dt>Auto gain</dt><dd>Keeps the loudness the same so you judge the tone.</dd></dl>
+
+<h2 id="compressor">Compressor</h2>
+<img src="assets/img/compressor-pro.webp" width="1920" height="1200" alt="Aemon Compressor, Pro mode" loading="lazy">
+<p>The left display shows the level and how much it’s being turned down. On the right is the curve: drag the lower handle for the threshold and the upper one for the ratio.</p>
+<h3>Simple</h3>
+<p>Choose a <b>Style</b>, then turn <b>Amount</b> until it sounds controlled. <b>Set amount for me</b> measures what’s playing and aims for about 3 dB on the loud parts. <b>Less pumping</b> slows the release. The check tells you if it’s gentle, moderate or heavy. If you’ve changed something by hand, no style is highlighted.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Attack and release</dt><dd>A slow attack lets the hit through. A fast one holds it down. Auto release adapts to the music.</dd><dt>Lookahead</dt><dd>Up to 10 ms, to catch a peak before it arrives. Adds the same latency.</dd><dt>Side-chain high-pass</dt><dd>Stops low end from driving the compression.</dd><dt>Ext SC</dt><dd>Compress from another track. Route that track to the plugin’s side-chain input in your DAW.</dd><dt>Mix</dt><dd>Blends in the uncompressed signal, for parallel compression.</dd><dt>Auto level</dt><dd>Keeps the output as loud as the input.</dd></dl>
+
+<h2 id="limiter">Limiter</h2>
+<img src="assets/img/limiter-pro.webp" width="1920" height="1200" alt="Aemon Limiter, Pro mode" loading="lazy">
+<p>Goes last on the master. Pick where the music is going, and it handles the level.</p>
+<h3>Simple</h3>
+<p>Choose <b>Streaming</b> (−14 LUFS), <b>Club</b> (−9), <b>Broadcast</b> (−23) or <b>Loudest clean</b>. <b>Make it loud safely</b> measures your track and sets Push, and stops short if reaching the target would hurt the sound. <b>Compare at equal loudness</b> turns the limited sound down to the level of the original. Then bypass compares sound, never volume. It only works while you listen: exports ignore it.</p><p>Play the loudest part for a few seconds before pressing <b>Make it loud safely</b>. It measures what it just heard. Choosing a loudness preset while music plays does the same.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Push</dt><dd>How hard you drive into the limiter.</dd><dt>Ceiling</dt><dd>The highest the output can go. −1 dBTP is the safe choice for streaming.</dd><dt>Style</dt><dd>Sets the release: Clean for mastering, Punchy for drums, Dense for loud modern masters, Safe for gentle protection. Turn Release yourself and no style is highlighted.</dd><dt>Lookahead</dt><dd>Sees peaks coming. Changing it changes the latency, so the sound fades for a moment.</dd><dt>True peak</dt><dd>Catches peaks between the samples, at 2×, 4× or 8×. 4× is a good default.</dd><dt>Hear removed</dt><dd>Plays only what the limiter takes away.</dd><dt>Dither</dt><dd>16-bit or 24-bit, only on your final export.</dd></dl>
+
+<h2 id="order">A good order</h2>
+<p>On the master: <b>Utility</b> to check mono and level, <b>EQ</b> to fix the balance, <b>Compressor</b> for 1 to 2 dB of glue, <b>Limiter</b> last. On a track: Utility, EQ, Compressor. Trust your ears over the order.</p>
+
+<h2 id="trouble">If something’s wrong</h2>
+<dl class="opts"><dt>The plugins don’t show up</dt><dd>Scan again in your DAW, and make sure it’s a 64-bit host that loads VST3.</dd><dt>Setup says a plugin is open</dt><dd>Save your project, close your DAW and press Retry. Setup never closes programs for you.</dd><dt>The sound is delayed</dt><dd>Linear phase, lookahead and the limiter add latency. Your DAW compensates during playback. Use zero-latency modes while recording.</dd><dt>Still stuck?</dt><dd>Report it on GitHub, or write to me. The links are at the bottom of the <a href="index.html">main page</a>.</dd></dl>
+</article></div>
+</main>
+<footer><div class="w"><p class="legal" style="margin:0;border:0;padding:0"><a href="index.html">Aemon</a> &nbsp; <a href="changelog.html">Changelog</a> &nbsp; <a href="signing.html">Code signing and privacy</a></p></div></footer>
+</body>
+</html>

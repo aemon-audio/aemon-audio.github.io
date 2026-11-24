@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aemon Code Signing and Privacy</title>
+<meta name="description" content="How Aemon is built and signed, and what it collects (nothing).">
+<meta name="theme-color" content="#14151a">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 100 100"><path d="M26.9 77.6A36 36 0 1 1 73.1 77.6" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><circle cx="50" cy="31" r="8.5" fill="#f0a35b"/></symbol></svg>
+<header class="nav"><div class="w"><a class="logo" href="index.html" aria-label="Aemon home"><svg><use href="#mark"/></svg>AEMON</a><a class="cta sm" style="margin-left:auto" href="index.html#download">Download</a></div></header>
+<main class="w doc"><div class="dochead"><h1>Code signing and privacy</h1></div><article>
+<h2>How a release is made</h2>
+<p>Every release is built by GitHub’s own computers, directly from the public source code. The same run executes the audio tests and the plugin host tests. Nobody builds a release on a private machine.</p>
+<h2>Signing</h2>
+<p>The first releases aren’t signed yet, and signing is coming soon. We’ll apply for free open-source code signing as soon as the code is public. This page will name the certificate and the people who approve releases when that’s in place. Until then Windows shows two warnings. <a href="index.html#install">This is what they mean and what to press.</a></p>
+<p>Until then, you can check that your download is the real one. Each release lists the SHA-256 checksum of its files. In PowerShell:</p>
+<pre><code>Get-FileHash .\Aemon-Suite-Setup.exe</code></pre>
+<h2>Privacy</h2>
+<p>The plugins don’t connect to the internet. They collect nothing and send nothing. The only files they write are presets you save, in <code>Documents\Aemon</code>, and what your DAW stores in your projects.</p>
+<p>This website has no cookies, no analytics and no third-party scripts. It’s hosted by GitHub Pages, and GitHub may log visitors’ IP addresses for security, as any host does.</p>
+</article></main>
+<footer><div class="w"><p class="legal" style="margin:0;border:0;padding:0"><a href="index.html">Aemon</a> &nbsp; <a href="guide.html">User guide</a> &nbsp; <a href="changelog.html">Changelog</a></p></div></footer>
+</body>
+</html>
