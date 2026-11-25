@@ -3,16 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aemon Suite</title>
-<meta name="description" content="Four free, open-source mixing and mastering plugins for Windows: Utility, EQ, Compressor and Limiter. VST3. No account, no trial, no limits.">
+<title>Aemon: free mixing and mastering VST3 plugins for Windows</title>
+<meta name="description" content="Nine free VST3 plugins for mixing and mastering: EQ, compressor, de-esser, saturation, imager, limiter and more. No account, no email, no catch.">
+<link rel="canonical" href="https://aemon-audio.github.io/">
 <meta name="theme-color" content="#14151a">
 <link rel="icon" href="favicon.svg">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Aemon Suite: free mixing and mastering plugins">
-<meta property="og:description" content="Utility, EQ, Compressor and Limiter. Free, open source, VST3 for Windows.">
+<meta property="og:url" content="https://aemon-audio.github.io/">
+<meta property="og:site_name" content="Aemon">
+<meta property="og:title" content="Aemon: nine free mixing and mastering plugins">
+<meta property="og:description" content="Nine plugins, from first fix to final limiter. Free, open source, VST3 for Windows.">
 <meta property="og:image" content="https://aemon-audio.github.io/assets/og.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Aemon Suite","applicationCategory":"MultimediaApplication","applicationSubCategory":"Audio plugin (VST3)","operatingSystem":"Windows 10, Windows 11","softwareVersion":"0.2.0","url":"https://aemon-audio.github.io/","downloadUrl":"https://github.com/aemon-audio/aemon/releases/latest","license":"https://www.gnu.org/licenses/agpl-3.0.html","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Nine free, open-source VST3 plugins for mixing and mastering.","publisher":{"@type":"Organization","name":"Aemon","url":"https://aemon-audio.github.io/","sameAs":["https://github.com/aemon-audio","https://www.instagram.com/theaymene"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What’s the catch?","acceptedAnswer":{"@type":"Answer","text":"There isn’t one. No strings, no login, no email, no data asked, no trial that runs out. I made them for the love of the game. The full plugins are free, for personal and paid work, with no time limit and no watermark. What you make with them belongs to you."}},{"@type":"Question","name":"Will it work in my DAW?","acceptedAnswer":{"@type":"Answer","text":"If your DAW loads 64-bit VST3 plugins on Windows, yes. That covers most of them."}},{"@type":"Question","name":"Is there a Mac version?","acceptedAnswer":{"@type":"Answer","text":"Not yet. The plugins are written to run on macOS too, and a Mac version (VST3 and AU) is planned after the Windows release."}},{"@type":"Question","name":"Why does Windows warn me when I install?","acceptedAnswer":{"@type":"Answer","text":"Because the installer isn’t signed yet, and because it’s new. Signing is coming soon. This is what you’ll see and what to press. Only download Aemon from this page or from the project’s GitHub releases."}},{"@type":"Question","name":"Do the plugins collect anything?","acceptedAnswer":{"@type":"Answer","text":"No. They never connect to the internet. This page has no cookies and no tracking either."}},{"@type":"Question","name":"Can I read or change the code?","acceptedAnswer":{"@type":"Answer","text":"Yes. Aemon is open source under the AGPL-3.0 licence. You can study it, build it yourself, and share your changes under the same licence."}},{"@type":"Question","name":"What comes next?","acceptedAnswer":{"@type":"Answer","text":"A vocal rider, a transient shaper, a tool that makes kick and bass fit, reverb and delay, then a rack that holds them all. Each one is tested like these, and comes out when it’s ready."}}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -20,7 +25,7 @@
 
 <header class="nav"><div class="w">
   <a class="logo" href="#top" aria-label="Aemon, top of page"><svg><use href="#mark"/></svg>AEMON</a>
-  <nav aria-label="Sections"><a href="#listen">Listen</a><a href="#plugins">Plugins</a><a href="#measured">Measured</a><a href="#install">Install</a><a href="#why">Why free</a><a href="#faq">Questions</a></nav>
+  <nav aria-label="Sections"><a href="#listen">Listen</a><a href="#plugins">Plugins</a><a href="#measured">Measured</a><a href="#install">Install</a><a href="mixing-guide.html">Learn mixing</a><a href="#why">Why free</a><a href="#faq">Questions</a></nav>
   <a class="cta sm" href="#download">Download</a>
 </div></header>
 
@@ -29,12 +34,12 @@
   <div class="top">
     <h1>Rough mix to finished record.</h1>
     <div class="side">
-      <p class="lede">Utility, EQ, Compressor and Limiter. Four precise plugins for mixing and mastering, built to the standard of paid tools and given away complete.</p>
+      <p class="lede">Nine precise plugins for mixing and mastering, from the first fix to the final limiter. Built to the standard of paid tools and given away complete.</p>
       <div class="acts">
         <a class="cta" href="#download"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download free</a>
         <a class="ghost" href="#listen"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M2 1l11 6-11 6z"/></svg>Hear it first</a>
       </div>
-      <p class="fine">Windows 10 and 11, 64-bit. VST3.</p>
+      <p class="fine">Windows 10 and 11, 64-bit. VST3.<br>Free. No account, no email, no data, no catch.</p>
     </div>
   </div>
   <div class="stage">
@@ -42,10 +47,15 @@
     <div class="win r"><img src="assets/img/limiter-pro-s.webp" width="1100" height="688" alt=""></div>
     <div class="win mid"><img src="assets/img/eq-pro.webp" width="1920" height="1200" alt="Aemon EQ in Pro mode, with six bands on a live spectrum" fetchpriority="high"></div>
   </div>
-  <nav class="chain" aria-label="The four plugins">
+  <nav class="chain" aria-label="The nine plugins">
     <a href="#utility"><b>Utility</b><span>Level, width, phase and loudness, sorted before you start.</span></a>
     <a href="#eq"><b>EQ</b><span>Sixteen bands that match the analogue curve up to 20 kHz.</span></a>
+    <a href="#deesser"><b>De-esser</b><i>New</i><span>Softens the S and leaves the voice alone.</span></a>
     <a href="#compressor"><b>Compressor</b><span>Punch, glue or control, with the level matched for you.</span></a>
+    <a href="#multiband"><b>Multiband</b><i>New</i><span>Holds each part of the sound on its own, down and up.</span></a>
+    <a href="#saturation"><b>Saturation</b><i>New</i><span>Warmth and grit, with every harmonic on screen.</span></a>
+    <a href="#imager"><b>Imager</b><i>New</i><span>Wider, and the mono mix stays the same.</span></a>
+    <a href="#clipper"><b>Clipper</b><i>New</i><span>Shaves the peaks, so the limiter has less to do.</span></a>
     <a href="#limiter"><b>Limiter</b><span>Loud and safe, with true peaks that hold.</span></a>
   </nav>
 </div></div>
@@ -93,6 +103,18 @@
   <div class="spec"><div><span class="lb">Bands</span><span class="num">16</span></div><div><span class="lb">Shapes</span><span class="num">8</span></div><div><span class="lb">Cut slopes</span><span class="num">12–96 dB/oct</span></div><div><span class="lb">Phase</span><span class="num">Zero latency or linear</span></div><div><span class="lb">Presets</span><span class="num">52</span></div></div>
 </div></section>
 
+<section class="plug" id="deesser"><div class="w">
+  <div class="ph"><div><p class="name">Aemon De-esser</p><h2>Softer S. Same voice.</h2><p class="lede">It tells an S from a vowel, and judges it against how loud the singer is at that moment. A quiet verse and a loud chorus get the same care, and vowels come out untouched.</p></div>
+    <div class="seg" role="group" aria-label="De-esser view"><button aria-pressed="true" data-m="simple">Simple</button><button aria-pressed="false" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="simple"><img src="assets/img/deesser-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon De-esser, Simple mode: amount, limit and a live view of every S"><img src="assets/img/deesser-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon De-esser, Pro mode: detection, placement and timing for every S"></figure>
+  <div class="feat">
+    <div><h3>Find my S</h3><p>Let the voice play and press one button. It listens back over the last seconds, finds where this singer’s S sits and sets a safe amount.</p></div>
+    <div><h3>Presets with a goal</h3><p>“About 4 dB off the sharp ones” means about 4 dB. Each voice preset aims itself at your recording, from rap to podcasts to backing vocals.</p></div>
+    <div><h3>Cut above, the S, or all of it</h3><p>Dip everything above the S, only the S itself, or the whole voice. On stereo, the middle or the sides, with the removed sound on its own.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Vowels</span><span class="num">Untouched</span></div><div><span class="lb">Latency</span><span class="num">5.3 ms</span></div><div><span class="lb">Range</span><span class="num">3–12 kHz</span></div><div><span class="lb">CPU, one core</span><span class="num">0.3 %</span></div><div><span class="lb">Presets</span><span class="num">28</span></div></div>
+</div></section>
+
 <section class="plug" id="compressor"><div class="w">
   <div class="ph"><div><p class="name">Aemon Compressor</p><h2>Hear the punch. Not the level trick.</h2><p class="lede">Clean compression with a display you can grab. Auto level keeps the output as loud as the input, so you judge the compression and nothing else.</p></div>
     <div class="seg" role="group" aria-label="Compressor view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
@@ -103,6 +125,54 @@
     <div><h3>External side-chain and mix</h3><p>Duck the bass under the kick or the music under a voice. Blend in the dry signal for parallel compression in place.</p></div>
   </div>
   <div class="spec"><div><span class="lb">Ratio</span><span class="num">1:1 to ∞</span></div><div><span class="lb">Attack</span><span class="num">0.1–100 ms</span></div><div><span class="lb">Lookahead</span><span class="num">0–10 ms</span></div><div><span class="lb">Distortion, 1 kHz</span><span class="num">0.0000 %</span></div><div><span class="lb">Presets</span><span class="num">31</span></div></div>
+</div></section>
+
+<section class="plug" id="multiband"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Multiband</p><h2>Every part of the sound, held on its own.</h2><p class="lede">Two to five bands that turn loud parts down and bring quiet parts up. Choose a goal and it sets every line to the music you’re playing.</p></div>
+    <div class="seg" role="group" aria-label="Multiband view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/multiband-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Multiband, Simple mode: four goals, amount, mix and what each band is doing"><img src="assets/img/multiband-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Multiband, Pro mode: up to five bands on the spectrum with every control"></figure>
+  <div class="feat">
+    <div><h3>Pick a goal</h3><p>Tighter lows, tame harsh, even and dense, or glue. Then Amount and Mix, and you’re done.</p></div>
+    <div><h3>Fit to my music</h3><p>Presets say how many dB they take off the loud parts. The plugin runs its own bands over the last eight seconds and finds the lines that do it.</p></div>
+    <div><h3>Natural or straight phase</h3><p>Zero-latency crossovers, or straight phase for mastering. Sidechain input, solo per band, and a mix that never combs.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Bands</span><span class="num">2–5</span></div><div><span class="lb">No compression</span><span class="num">Bit-exact</span></div><div><span class="lb">Crossovers</span><span class="num">24 or 48 dB/oct</span></div><div><span class="lb">CPU, five bands</span><span class="num">2–3 %</span></div><div><span class="lb">Presets</span><span class="num">33</span></div></div>
+</div></section>
+
+<section class="plug" id="saturation"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Saturation</p><h2>Colour you can see.</h2><p class="lede">Four characters, from a little warmth to broken. The display shows the harmonics it adds, and they are the ones it really adds. The level stays matched, so you hear colour and not volume.</p></div>
+    <div class="seg" role="group" aria-label="Saturation view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/saturation-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Saturation, Simple mode: amount, character, focus and a colour check"><img src="assets/img/saturation-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Saturation, Pro mode: drive, bias, tone and the harmonics it adds"></figure>
+  <div class="feat">
+    <div><h3>Four characters</h3><p>Warm, Thick, Bright and Broken. Our own curves, described by what they do to the sound.</p></div>
+    <div><h3>Aim it</h3><p>Drive only the lows, mids or highs. Give an 808 the harmonics a phone can play and leave the rest clean.</p></div>
+    <div><h3>Set amount for me</h3><p>Finds an amount you can notice without it getting harsh. Cleaner takes 3 dB back whenever you want.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Harmonics shown</span><span class="num">within 0.2 dB</span></div><div><span class="lb">Oversampling</span><span class="num">up to 8×</span></div><div><span class="lb">Latency, 8×</span><span class="num">2.8 ms</span></div><div><span class="lb">No drive</span><span class="num">Bit-exact</span></div><div><span class="lb">Presets</span><span class="num">14</span></div></div>
+</div></section>
+
+<section class="plug" id="imager"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Imager</p><h2>Wider. And mono doesn’t change.</h2><p class="lede">Most wideners fall apart on a phone. This one only ever touches the difference between left and right, so what a mono speaker plays is what it played before.</p></div>
+    <div class="seg" role="group" aria-label="Imager view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/imager-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Imager, Simple mode: width, low end, make stereo and a mono check"><img src="assets/img/imager-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Imager, Pro mode: width in four bands, stereo map and what mono loses"></figure>
+  <div class="feat">
+    <div><h3>A plain mono check</h3><p>It tells you how many dB each band loses in mono, and Keep it mono-safe holds that loss at the limit you choose.</p></div>
+    <div><h3>Low end to the middle</h3><p>Everything below the line goes to the centre. Tight on big systems, and ready for vinyl.</p></div>
+    <div><h3>Make stereo</h3><p>Opens up a mono synth, guitar or vocal. Whatever it adds disappears completely in mono.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">Mono mix</span><span class="num">Same, to −144 dB</span></div><div><span class="lb">Bands</span><span class="num">4</span></div><div><span class="lb">Latency</span><span class="num">48 ms or 0</span></div><div><span class="lb">Neutral</span><span class="num">Bit-exact</span></div><div><span class="lb">Presets</span><span class="num">29</span></div></div>
+</div></section>
+
+<section class="plug" id="clipper"><div class="w">
+  <div class="ph"><div><p class="name">Aemon Clipper</p><h2>The peaks go. The punch stays.</h2><p class="lede">It cuts the tallest instants so everything else can come up. Put it before the limiter and the limiter works less. From hard to soft, with a ceiling that holds between the samples.</p></div>
+    <div class="seg" role="group" aria-label="Clipper view"><button aria-pressed="false" data-m="simple">Simple</button><button aria-pressed="true" data-m="pro">Pro</button></div></div>
+  <figure class="win shot" data-mode="pro"><img src="assets/img/clipper-simple.webp" width="1920" height="1200" loading="lazy" alt="Aemon Clipper, Simple mode: push, softness, ceiling and a peak check"><img src="assets/img/clipper-pro.webp" width="1920" height="1200" loading="lazy" alt="Aemon Clipper, Pro mode: the curve, what is clipped and every control"></figure>
+  <div class="feat">
+    <div><h3>Shave the peaks for me</h3><p>Finds how much you can take off before you’d hear it: 3 dB at most, and no more than one percent of the sound.</p></div>
+    <div><h3>Hard, round or soft</h3><p>One Softness control. Hard stays untouched right up to the ceiling. Soft bends early and adds warmth.</p></div>
+    <div><h3>Clean where it counts</h3><p>8× oversampling and a second anti-aliasing method keep false tones low, 90 dB down on a hard-clipped 5 kHz tone. Hear removed plays exactly what was cut.</p></div>
+  </div>
+  <div class="spec"><div><span class="lb">False tones, 5 kHz</span><span class="num">−90 dB</span></div><div><span class="lb">Below the bend</span><span class="num">Bit-exact</span></div><div><span class="lb">Latency, 8×</span><span class="num">3.3 ms</span></div><div><span class="lb">CPU, one core</span><span class="num">about 5 %</span></div><div><span class="lb">Presets</span><span class="num">10</span></div></div>
 </div></section>
 
 <section class="plug" id="limiter"><div class="w">
@@ -131,25 +201,31 @@
     <div><h3>A ceiling that holds between samples</h3><p>Highest true peak over 108 limiter setups per signal, ceiling at −1.0 dBTP. The grey bars are how far peaks escape when a limiter only watches samples. Above 0 can clip.</p><div id="chartTp"></div><div class="leg"><span><i style="color:#646877;border-top-width:9px"></i>Same limiter, sample peaks only</span><span><i style="color:#f0a35b;border-top-width:9px"></i>Aemon, true peak on</span></div></div>
   </div>
   <div class="tbl"><table><thead><tr><th>What</th><th>How it’s tested</th><th>Result</th></tr></thead><tbody>
-    <tr><td>Untouched means untouched</td><td>All four at neutral (the Limiter with peaks under its ceiling), 44.1 to 192 kHz, mono and stereo</td><td>Bit-exact</td></tr>
+    <tr><td>Untouched means untouched</td><td>All nine at neutral (Limiter and Clipper with peaks under the ceiling), 44.1 to 192 kHz, mono and stereo</td><td>Bit-exact</td></tr>
     <tr><td>Loudness meter</td><td>1 kHz at −23 dBFS should read −23 LUFS, three sample rates</td><td>within 0.01 LU</td></tr>
     <tr><td>Compressor attack</td><td>Set to 10 ms, measured to the 63 % point</td><td>9.98 ms</td></tr>
     <tr><td>Compressor lookahead</td><td>First peak after silence, with and without 5 ms of lookahead</td><td>16.2 → 0.1 dB over</td></tr>
     <tr><td>Auto level</td><td>Loudness change after settling, 12 dB of compression</td><td>0.02 dB</td></tr>
     <tr><td>Make it loud safely</td><td>Asked for −14 LUFS on a quiet mix, then measured playing</td><td>−14.06 LUFS</td></tr>
     <tr><td>Limiter release</td><td>Set to 100 ms, auto release off</td><td>100.0 ms</td></tr>
-    <tr><td>Switching anything</td><td>Polarity, gain, threshold, ceiling and bypass, changed during playback</td><td>No clicks</td></tr>
-    <tr><td>Plugin stability</td><td>pluginval, the industry host test, at its strictest level, all four plugins</td><td>10 / 10</td></tr>
+    <tr><td>De-esser on vowels</td><td>Five synthetic singers, every vowel, at the default detection</td><td>Untouched</td></tr>
+    <tr><td>De-esser, quiet and loud</td><td>The same S after level jumps of up to 12 dB inside a take</td><td>within 0.5 dB</td></tr>
+    <tr><td>Imager in mono</td><td>Mono mix before and after, 60 random settings</td><td>same, −144 dB</td></tr>
+    <tr><td>Clipper false tones</td><td>5 kHz tone, 12 dB into a hard clip, 48 kHz session</td><td>−90 dB</td></tr>
+    <tr><td>Saturation display</td><td>Harmonics shown against harmonics measured, every character and focus</td><td>within 0.2 dB</td></tr>
+    <tr><td>Multiband presets</td><td>Cut on the loud parts, every preset on four different sounds</td><td>within 0.5 dB or 15 %</td></tr>
+    <tr><td>Switching anything</td><td>Polarity, gain, threshold, ceiling, characters, bands and bypass, changed during playback</td><td>No clicks</td></tr>
+    <tr><td>Plugin stability</td><td>pluginval, the industry host test, at its strictest level, all nine plugins</td><td>10 / 10</td></tr>
   </tbody></table></div>
 </div></div>
 
 <section id="presets"><div class="w"><div class="pre">
-  <div class="sh" style="margin:0"><h2>132 presets that say what they do.</h2><p class="lede">No “Magic Glue 3”. Every preset is named after the result, with one line that tells you how it gets there. The plugin shows it when you load it.</p></div>
+  <div class="sh" style="margin:0"><h2>246 presets that say what they do.</h2><p class="lede">No “Magic Glue 3”. Every preset is named after the result, with one line that tells you how it gets there. The plugin shows it when you load it.</p></div>
   <ul class="plist" id="plist"></ul>
 </div></div></section>
 
 <section id="every"><div class="w">
-  <div class="sh"><h2>The details, in all four.</h2></div>
+  <div class="sh"><h2>The details, in all nine.</h2></div>
   <div class="every">
     <div><svg viewBox="0 0 34 34"><path d="M4 12h9M4 22h9"/><path class="e" d="M21 12h9M21 22h9"/><path d="M17 6v22"/></svg><h3>A/B and undo</h3><p>Two full settings to compare, and every move can be taken back.</p></div>
     <div><svg viewBox="0 0 34 34"><rect x="4" y="8" width="26" height="18" rx="3"/><path class="e" d="M22 21l4 0 0-4"/></svg><h3>Any size, always sharp</h3><p>Drag the corner from 60 to 200 %. Everything is drawn, nothing is a picture.</p></div>
@@ -157,7 +233,7 @@
     <div><svg viewBox="0 0 34 34"><path d="M5 8h24v14H15l-6 5v-5H5z"/><path class="e" d="M11 13h12M11 17h8"/></svg><h3>Help on hover</h3><p>Point at any control and the strip below explains it in a sentence.</p></div>
     <div><svg viewBox="0 0 34 34"><path d="M3 21c4 0 4-9 8-9s4 14 8 14 4-9 12-9" /><path class="e" d="M3 29h28"/></svg><h3>Click-free automation</h3><p>Every control is smoothed and can be automated from your DAW.</p></div>
     <div><svg viewBox="0 0 34 34"><path d="M17 4v26M4 17h26"/><circle class="e" cx="17" cy="17" r="7"/></svg><h3>44.1 to 192 kHz</h3><p>Mono and stereo, tested at every common sample rate.</p></div>
-    <div><svg viewBox="0 0 34 34"><rect x="6" y="6" width="22" height="22" rx="3"/><path class="e" d="M12 20v-4M17 20v-8M22 20v-6"/></svg><h3>Light on the CPU</h3><p>Utility and Compressor use under 1 % of one core. The Limiter about 3 % at 8×.</p></div>
+    <div><svg viewBox="0 0 34 34"><rect x="6" y="6" width="22" height="22" rx="3"/><path class="e" d="M12 20v-4M17 20v-8M22 20v-6"/></svg><h3>Light on the CPU</h3><p>Seven of the nine use under 4 % of one core. The Clipper uses about 5, Saturation about 6.</p></div>
     <div><svg viewBox="0 0 34 34"><path d="M17 4l11 4v8c0 7-5 11-11 14C11 27 6 23 6 16V8z"/><path class="e" d="M12 17l4 4 7-8"/></svg><h3>No account, no phoning home</h3><p>Nothing to register, nothing collected, works offline forever.</p></div>
   </div>
 </div></section>
@@ -178,25 +254,30 @@
 
 <section id="download"><div class="w"><div class="dl">
   <div>
-    <h2>One installer. All four.</h2>
-    <p class="lede" style="margin-top:18px">Tick what you want, or keep everything. It installs to the standard VST3 folder, updates over itself, and uninstalls cleanly. It never closes your DAW, and your own presets stay yours.</p>
+    <h2>One installer. All nine.</h2>
+    <p class="lede" style="margin-top:18px">Tick what you want, or keep everything. It finds the Aemon plugins you already have, updates them and adds the new ones. It uninstalls cleanly. It never closes your DAW, and your own presets stay yours.</p>
     <div class="acts"><a class="cta" href="#download" data-link="setup"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download Aemon Suite</a><a class="ghost" href="#download" data-link="zip">ZIP, without installer</a></div>
     <p class="fine">Windows 10 or 11, 64-bit. Any VST3 host. Free, AGPL-3.0. <a href="guide.html">Read the guide</a></p>
     <ol class="steps">
       <li><b>Run the installer</b><span>Close your DAW first. Windows will ask twice, because Aemon isn’t signed yet. <a href="#install">See what to press</a></span></li>
       <li><b>Rescan plugins</b><span>Open your DAW’s plugin manager and scan for new plugins.</span></li>
-      <li><b>Load Aemon</b><span>Look for Aemon Utility, EQ, Compressor and Limiter in the effects list.</span></li>
+      <li><b>Load Aemon</b><span>All nine start with Aemon in the effects list.</span></li>
     </ol>
   </div>
-  <div class="setup" aria-label="Preview of the installer, with the four plugins ticked">
+  <div class="setup" aria-label="Preview of the installer, with the nine plugins ticked">
     <div class="t"><svg><use href="#mark"/></svg>Aemon Suite Setup</div>
-    <div class="b"><h3>Choose your plugins</h3><p>All four are selected. They work on their own or together.</p>
+    <div class="b"><h3>Choose your plugins</h3><p>All nine are selected. They work on their own or together.</p>
       <label for="i1"><input type="checkbox" id="i1" checked><b>Aemon Utility</b><span>level, width, phase</span></label>
       <label for="i2"><input type="checkbox" id="i2" checked><b>Aemon EQ</b><span>sixteen bands</span></label>
-      <label for="i3"><input type="checkbox" id="i3" checked><b>Aemon Compressor</b><span>punch and glue</span></label>
-      <label for="i4"><input type="checkbox" id="i4" checked><b>Aemon Limiter</b><span>loud and safe</span></label>
+      <label for="i3"><input type="checkbox" id="i3" checked><b>Aemon De-esser</b><span>softer S</span></label>
+      <label for="i4"><input type="checkbox" id="i4" checked><b>Aemon Compressor</b><span>punch and glue</span></label>
+      <label for="i5"><input type="checkbox" id="i5" checked><b>Aemon Multiband</b><span>band by band</span></label>
+      <label for="i6"><input type="checkbox" id="i6" checked><b>Aemon Saturation</b><span>warmth and grit</span></label>
+      <label for="i7"><input type="checkbox" id="i7" checked><b>Aemon Imager</b><span>wide, mono-safe</span></label>
+      <label for="i8"><input type="checkbox" id="i8" checked><b>Aemon Clipper</b><span>peaks off</span></label>
+      <label for="i9"><input type="checkbox" id="i9" checked><b>Aemon Limiter</b><span>loud and safe</span></label>
     </div>
-    <div class="f"><span id="setupCount">4 plugins selected</span><b>Install</b></div>
+    <div class="f"><span id="setupCount">9 plugins selected</span><b>Install</b></div>
   </div>
 </div></div></section>
 
@@ -214,7 +295,7 @@
   </div>
   <div class="facts">
     <div><h3>If your browser stops the download</h3><p>It may say the file isn’t downloaded often. Open the download’s menu and choose <b>Keep</b>.</p></div>
-    <div><h3>Signing is coming soon</h3><p>We’ll apply for free open-source signing as soon as the code is public. Windows may still ask for a few weeks after that, until enough people have installed it.</p></div>
+    <div><h3>Signing is coming soon</h3><p>Next, we apply for free open-source signing. Windows may still ask for a few weeks after that, until enough people have installed it.</p></div>
     <div><h3>Check it’s the real file</h3><p>Every release lists a SHA-256 checksum. Compare it with yours before you run anything. <a href="signing.html">How to do it</a></p></div>
   </div>
 </div></section>
@@ -222,24 +303,29 @@
 <section id="faq"><div class="w"><div class="faq">
   <h2>Questions, answered.</h2>
   <div>
-    <details open><summary>What’s the catch?</summary><p>There isn’t one. The full plugins are free, for personal and paid work, with no time limit and no watermark. What you make with them belongs to you.</p></details>
+    <details open><summary>What’s the catch?</summary><p>There isn’t one. No strings, no login, no email, no data asked, no trial that runs out. I made them for the love of the game. The full plugins are free, for personal and paid work, with no time limit and no watermark. What you make with them belongs to you.</p></details>
     <details><summary>Will it work in my DAW?</summary><p>If your DAW loads 64-bit VST3 plugins on Windows, yes. That covers most of them.</p></details>
     <details><summary>Is there a Mac version?</summary><p>Not yet. The plugins are written to run on macOS too, and a Mac version (VST3 and AU) is planned after the Windows release.</p></details>
     <details><summary>Why does Windows warn me when I install?</summary><p>Because the installer isn’t signed yet, and because it’s new. Signing is coming soon. <a href="#install">This is what you’ll see and what to press.</a> Only download Aemon from this page or from the project’s GitHub releases.</p></details>
     <details><summary>Do the plugins collect anything?</summary><p>No. They never connect to the internet. This page has no cookies and no tracking either.</p></details>
     <details><summary>Can I read or change the code?</summary><p>Yes. Aemon is open source under the AGPL-3.0 licence. You can study it, build it yourself, and share your changes under the same licence.</p></details>
-    <details><summary>What comes next?</summary><p>Saturation, de-esser, stereo imager, multiband compressor and reverb, one at a time, each tested like these.</p></details>
+    <details><summary>What comes next?</summary><p>A vocal rider, a transient shaper, a tool that makes kick and bass fit, reverb and delay, then a rack that holds them all. Each one is tested like these, and comes out when it’s ready.</p></details>
   </div>
 </div></div></section>
 
-<div class="end"><div class="w"><h2>Finish the one you’re working on.</h2><a class="cta" href="#download"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download free</a><p class="fine">Four plugins. Nothing to pay, now or later.</p></div></div>
+<section id="learn"><div class="w">
+  <div class="sh" style="margin:0"><h2>New to mixing? Start here.</h2><p class="lede">Recording, vocals, drums, 808s, loudness, and a checklist before you export. Written for any DAW and any plugins.</p></div>
+  <div class="acts" style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px"><a class="ghost" href="mixing-guide.html">Read the mixing guide</a></div>
+</div></section>
+
+<div class="end"><div class="w"><h2>Finish the one you’re working on.</h2><a class="cta" href="#download"><svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v9.5M4.8 8L9 12l4.2-4M2.5 16h13"/></svg>Download free</a><p class="fine">Nine plugins. Nothing to pay, nothing to sign up for, now or later.</p></div></div>
 </main>
 
 <footer><div class="w">
   <div class="row">
     <a class="logo" href="#top"><svg><use href="#mark"/></svg>AEMON</a>
-    <div><span class="lb">Plugins</span><ul><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#limiter">Limiter</a></li></ul></div>
-    <div><span class="lb">Help</span><ul><li><a href="#install">Install</a></li><li><a href="#faq">Questions</a></li><li><a href="guide.html">User guide</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
+    <div><span class="lb">Plugins</span><ul><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#deesser">De-esser</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#multiband">Multiband</a></li><li><a href="#saturation">Saturation</a></li><li><a href="#imager">Imager</a></li><li><a href="#clipper">Clipper</a></li><li><a href="#limiter">Limiter</a></li></ul></div>
+    <div><span class="lb">Help</span><ul><li><a href="#install">Install</a></li><li><a href="#faq">Questions</a></li><li><a href="guide.html">User guide</a></li><li><a href="mixing-guide.html">Mixing guide</a></li><li><a href="changelog.html">Changelog</a></li></ul></div>
     <div><span class="lb">Open source</span><ul><li><a href="#download" data-link="repo">Source code</a></li><li><a href="#download" data-link="issues">Report a problem</a></li><li><a href="signing.html">Code signing and privacy</a></li></ul></div>
     <div><span class="lb">Say hello</span><ul><li><a href="https://www.instagram.com/theaymene" rel="me noopener">Instagram @theaymene</a></li><li><a href="#why" data-link="mail">Email</a></li></ul></div>
   </div>

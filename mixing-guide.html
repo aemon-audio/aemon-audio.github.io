@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>How to mix vocals, drums and 808s: free mixing guide | Aemon</title>
+<meta name="description" content="How to mix vocals, drums and 808s step by step: recording, plugin order, EQ, compression, LUFS loudness and an export checklist. Free, no sign-up.">
+<link rel="canonical" href="https://aemon-audio.github.io/mixing-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://aemon-audio.github.io/mixing-guide.html">
+<meta property="og:site_name" content="Aemon">
+<meta property="og:title" content="How to mix a song, start to finish">
+<meta property="og:description" content="Vocals, drums, 808s, loudness and a checklist. Free, no sign-up, for any DAW.">
+<meta property="og:image" content="https://aemon-audio.github.io/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#14151a">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"How to mix a song, start to finish","description":"How to mix vocals, drums and 808s step by step: recording, plugin order, EQ, compression, LUFS loudness and an export checklist. Free, no sign-up.","url":"https://aemon-audio.github.io/mixing-guide.html","mainEntityOfPage":"https://aemon-audio.github.io/mixing-guide.html","image":"https://aemon-audio.github.io/assets/og.png","datePublished":"2026-11-25","dateModified":"2026-11-25","inLanguage":"en","isAccessibleForFree":true,"author":{"@type":"Organization","name":"Aemon","url":"https://aemon-audio.github.io/","sameAs":["https://github.com/aemon-audio","https://www.instagram.com/theaymene"]},"publisher":{"@type":"Organization","name":"Aemon","url":"https://aemon-audio.github.io/","sameAs":["https://github.com/aemon-audio","https://www.instagram.com/theaymene"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Aemon","item":"https://aemon-audio.github.io/"},{"@type":"ListItem","position":2,"name":"Mixing guide","item":"https://aemon-audio.github.io/mixing-guide.html"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the right order for plugins on a vocal?","acceptedAnswer":{"@type":"Answer","text":"A good start is: cut EQ, compressor, de-esser, saturation, boost EQ, then delay and reverb on sends. Cut before you compress so the compressor doesn’t react to what you’re removing, and brighten after it."}},{"@type":"Question","name":"Should the de-esser go before or after the compressor?","acceptedAnswer":{"@type":"Answer","text":"Usually after, because compression brings the S up. If one S is so sharp that it drives the compressor, use a light one before as well."}},{"@type":"Question","name":"EQ before or after compression?","acceptedAnswer":{"@type":"Answer","text":"Both. Take problems out before, add tone after."}},{"@type":"Question","name":"How loud should a mix be before mastering?","acceptedAnswer":{"@type":"Answer","text":"Let it peak around −6 dBFS with nothing on the mix bus that’s only there for loudness. The exact number matters less than not clipping."}},{"@type":"Question","name":"What LUFS should I master to?","acceptedAnswer":{"@type":"Answer","text":"Spotify plays at −14 LUFS by default, but you don’t have to hit it. Much hip-hop is around −10 to −8 and gets turned down. Make it as loud as it stays good, with true peak at −1 dBTP or lower."}},{"@type":"Question","name":"How do I make an 808 heard on a phone?","acceptedAnswer":{"@type":"Answer","text":"Saturate its lows so it gets harmonics between about 150 and 800 Hz. The phone plays those and the ear fills in the bass."}},{"@type":"Question","name":"How do I mix vocals over a two-track beat?","acceptedAnswer":{"@type":"Answer","text":"Turn the beat down first, then dip it 1 or 2 dB around 2 to 4 kHz where the words are, and keep the reverb ducked under the voice. Ride the beat down in busy verses instead of pushing the vocal up."}},{"@type":"Question","name":"Can I mix with free plugins only?","acceptedAnswer":{"@type":"Answer","text":"Yes. An EQ, a compressor, a de-esser and a limiter are enough for a finished song. Aemon’s are free, complete and ask for nothing. So are many others."}}]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="mark" viewBox="0 0 100 100"><path d="M26.9 77.6A36 36 0 1 1 73.1 77.6" fill="none" stroke="currentColor" stroke-width="15" stroke-linecap="round"/><circle cx="50" cy="31" r="8.5" fill="#f0a35b"/></symbol></svg>
+<header class="nav"><div class="w"><a class="logo" href="index.html" aria-label="Aemon home"><svg><use href="#mark"/></svg>AEMON</a><nav aria-label="Mixing guide"><a href="#record">Record</a><a href="#order">Order</a><a href="#vocals">Vocals</a><a href="#drums">Drums</a><a href="#loudness">Loudness</a><a href="#check">Checklist</a></nav><a class="cta sm" href="index.html#download">Download</a></div></header>
+<main id="main" class="w doc">
+<div class="dochead"><h1>How to mix a song, start to finish</h1><p class="lede">From the first take to the final export, in any DAW. The numbers are starting points. If your ears disagree with a number, your ears win.</p></div>
+<div class="docgrid">
+<aside class="toc" aria-label="Contents"><ul><li><a href="#idea">What mixing is</a></li><li><a href="#record">Recording</a></li><li><a href="#setup">Set up the session</a></li><li><a href="#order">The order</a></li><li><a href="#eqcomp">EQ and compression</a></li><li><a href="#vocals">Vocals</a></li><li><a href="#stacks">Stacks and ad-libs</a></li><li><a href="#drums">Drums</a></li><li><a href="#low">Kick, 808 and bass</a></li><li><a href="#space">Width and space</a></li><li><a href="#bus">Mix bus and master</a></li><li><a href="#loudness">Checking loudness</a></li><li><a href="#translate">Phones, cars, clubs</a></li><li><a href="#fix">Problem, then fix</a></li><li><a href="#habits">Good habits</a></li><li><a href="#questions">Questions</a></li><li><a href="#check">Before you export</a></li></ul></aside>
+<article>
+
+<div class="free"><p class="ft">Free. No strings.</p><p>This guide and all nine plugins are free. No account, no login, no email, no data asked, no trial, no “pro version” behind a wall. There’s no catch. I make music, I wanted everyone to have good tools, and I did it <b>for the love of the game</b>. The code is open, so anyone can check.</p></div>
+<h2 id="idea" style="margin-top:56px">What mixing is</h2>
+<p>A mix answers one question: what should the listener notice right now? In most songs that’s the voice, then the drums, then everything else. Every move you make either helps that or gets in its way.</p>
+<p>You have four tools, and they go in this order of power: <b>level</b>, <b>tone</b>, <b>dynamics</b>, <b>space</b>. Most problems people try to solve with a fifth plugin are level problems.</p>
+
+<h2 id="record">How to record vocals at home</h2>
+<p>A good take needs half the plugins. These cost nothing.</p>
+<h3>The room</h3>
+<p>Stay away from bare walls and corners. A closet full of clothes, or a duvet behind you and one behind the mic, beats an empty room with an expensive microphone. Clap once: if you hear a ring, so does the mic.</p>
+<h3>The microphone</h3>
+<dl class="opts"><dt>Distance</dt><dd>Start at about 15 to 20 cm, a hand’s width with the thumb out. Closer is warmer and boomier. Further brings in the room.</dd><dt>Pop filter</dt><dd>Between you and the mic, or aim the mic slightly past the mouth so P and B blow beside it.</dd><dt>Sharp S</dt><dd>Turn the mic a little off to the side before you reach for a de-esser.</dd><dt>Headphones</dt><dd>Closed ones, not too loud. What leaks into the mic can’t be mixed out.</dd></dl>
+<h3>The level</h3>
+<p>Record in 24-bit. Let normal lines peak around −18 to −12 dBFS and the loudest words stay under −6. There’s no reward for recording hot, and a clipped take can’t be repaired. Do the loudest part of the song as your level test, not the intro.</p>
+<h3>The performance</h3>
+<ul class="dots"><li>Warm up, drink water, keep your phone on silent.</li><li>Take three to five full passes before you fix single lines. The energy is in the passes.</li><li>Double the lines that matter, and record ad-libs on their own track.</li><li>Keep the same distance for a whole song. Step back for shouts, lean in for whispers.</li><li>Record ten seconds of silence. It tells you how noisy the room is.</li></ul>
+
+<h2 id="setup">Set up the session</h2>
+<ol><li><b>Name and colour</b> every track. Group them: drums, 808 and bass, music, lead, backing, effects.</li><li><b>Clean up.</b> Cut silence, fix clicks, choose takes, line up doubles. Do this before any mixing.</li><li><b>Set the gain.</b> Bring each track to a sensible level before the first plugin, so every plugin behaves as expected. Aim for your mix bus to peak near −6 dBFS.</li><li><b>Check phase.</b> If a layered kick or a doubled guitar gets thin, flip the polarity of one and keep the fuller one. <a href="guide.html#utility">Utility</a> does both.</li><li><b>Load one or two references</b>: finished songs in the same style. Turn them down until they’re as loud as your mix. A reference that’s louder will always win.</li></ol>
+
+<h2 id="order">The order: mixing step by step</h2>
+<p>Do it in this order and each step makes the next one smaller.</p>
+<ol class="flow"><li><b>Balance</b><span>Faders only. 20 minutes. It should already feel like the song.</span></li><li><b>Clean</b><span>Cuts: rumble, boxiness, harsh spots.</span></li><li><b>Control</b><span>Compression and de-essing where the level jumps.</span></li><li><b>Colour</b><span>Saturation and broad boosts, for character.</span></li><li><b>Space</b><span>Width, delay and reverb.</span></li><li><b>Ride</b><span>Automation: lift the hook, tuck the fills.</span></li><li><b>Master</b><span>A little glue, peaks, level.</span></li></ol>
+<p>On one track the usual chain is <b>cut EQ, compressor, de-esser, saturation, boost EQ, sends</b>. Two rules explain why. Remove what you don’t want before you compress, or the compressor reacts to it. Brighten after you compress, and watch the S when you do.</p>
+<p>Start with the most important thing. For a song led by a voice, get the voice and the drums right together, then fit the rest around them.</p>
+
+<h2 id="eqcomp">How to use EQ and compression</h2>
+<h3>EQ</h3>
+<ul class="dots"><li>Cut narrow, boost wide. Two or three dB is a lot on a vocal.</li><li>Sweeping a big boost makes every frequency sound bad. Only cut what bothers you with the band off.</li><li>If two sounds fight, cut one where the other lives. Boosting both makes it worse.</li><li>Use auto gain, or match the level by hand. A boost that’s louder always sounds better for ten seconds.</li></ul>
+<h3>Compression</h3>
+<dl class="opts"><dt>Threshold</dt><dd>Where it starts. Lower it until the loud parts move 3 to 6 dB.</dd><dt>Ratio</dt><dd>How firm. 2:1 is gentle, 4:1 is control, 8:1 and up is a hand on the lid.</dd><dt>Attack</dt><dd>Slow (20 to 40 ms) lets the hit through. Fast (1 to 5 ms) holds it down.</dd><dt>Release</dt><dd>Let it recover before the next word or hit. If you hear it breathe, make it slower.</dd></dl>
+<p>If you can’t say what the compressor is for, take it off. Two that do 3 dB each sound more natural than one doing 6.</p>
+
+<h2 id="vocals">How to mix vocals</h2>
+<p>This is where a voice’s parts usually sit. Every voice is different, so use it as a map and not as a recipe.</p>
+<div class="vmap" role="img" aria-label="Map of a voice: rumble below 80 hertz, body 120 to 250, boxy 300 to 600, nasal 800 to 1500, words 2000 to 5000, S 5000 to 9000, air above 10000">
+<div style="--a:0;--b:13"><i>Rumble</i><span>under 80 Hz</span></div><div style="--a:17;--b:34"><i>Body</i><span>120–250</span></div><div style="--a:36;--b:53"><i>Boxy</i><span>300–600</span></div><div style="--a:55;--b:66"><i>Nasal</i><span>800–1.5k</span></div><div class="k" style="--a:67;--b:81"><i>Words</i><span>2–5k</span></div><div style="--a:81;--b:90"><i>S</i><span>5–9k</span></div><div style="--a:91;--b:100"><i>Air</i><span>10k up</span></div>
+</div>
+<h3>Lead vocal, step by step</h3>
+<ol>
+<li><b>Edit.</b> Cut the noise between lines, but leave some breaths. Pull the loudest breaths down by hand instead of gating them. Fix single loud or quiet words with clip gain, so the compressor doesn’t have to.</li>
+<li><b>Tune</b> first, if you tune. Natural takes a light hand, the effect takes a fast one. Either way, set the right key.</li>
+<li><b>Cut EQ.</b> Low cut at 70 to 100 Hz. If it booms, take 2 to 4 dB around 150 to 250. If it sounds like a box, 2 to 4 dB around 300 to 500. If it pokes, a <b>dynamic</b> band around 2.5 to 4 kHz that only acts on the loud words.</li>
+<li><b>Compress.</b> First compressor: 4:1, attack about 5 to 10 ms, release 60 to 100 ms, 3 to 5 dB on the loud words. Rap often takes a second, gentler one for another 2 or 3 dB.</li>
+<li><b>De-ess</b> after compression, because compression brings the S up. About 3 to 5 dB on the sharp ones. If it lisps, use less.</li>
+<li><b>Saturate</b> a little. It brings a voice forward where an EQ boost would only make it bright.</li>
+<li><b>Boost EQ.</b> 1 to 3 dB around 3 to 5 kHz for words, or a gentle shelf from 10 kHz for air. Not both unless it needs both. Check the S again.</li>
+<li><b>Delay, then reverb</b>, on sends. An eighth or quarter note delay fills the gaps. Short plate reverb, 20 to 60 ms of pre-delay so the word comes first. Cut both below about 200 Hz and above about 8 kHz. Duck them under the voice so they show up between the words.</li>
+<li><b>Ride</b> the level, line by line. This is what makes a vocal sound finished, more than any plugin.</li>
+</ol>
+<h3>How loud should it be?</h3>
+<p>Turn your speakers down until you can barely hear the song. You should still understand every word, and still feel the snare. If the voice disappears, bring it up. If it’s all you hear, bring it down.</p>
+
+<h2 id="stacks">Mixing doubles, stacks and ad-libs</h2>
+<ul class="dots"><li><b>Doubles:</b> 6 to 10 dB under the lead, low cut higher, S almost gone. Let one voice say the S.</li><li><b>Hook stacks:</b> pan in pairs, send them to one bus, compress that bus, cut a little around 2 to 4 kHz so the lead keeps the words.</li><li><b>Ad-libs:</b> make them clearly different: filtered, wider, further back, or with a longer delay. If they sound like the lead, they fight it.</li><li><b>Throws:</b> automate the delay send on the last word of a line. One good throw beats a delay that runs all song.</li></ul>
+
+<h2 id="drums">How to mix drums</h2>
+<ol><li><b>Choose the right sounds.</b> A sample that fits needs two plugins. One that doesn’t won’t be saved by ten.</li><li><b>Kick and snare first</b>, loud enough to carry the song. Then hats, lower than you think.</li><li><b>Kick:</b> weight around 50 to 90 Hz, box around 250 to 400 (cut), click around 2 to 5 kHz. A compressor with a slow attack adds punch, a fast one shortens it.</li><li><b>Snare or clap:</b> body around 180 to 250 Hz, crack around 2 to 4 kHz, air above 8. Layer two that do different jobs, and check their phase.</li><li><b>Hats and percussion:</b> cut everything below 200 to 400 Hz. If they’re harsh, a dip around 7 to 9 kHz beats turning them down. Pan them a little.</li><li><b>Drum bus:</b> 2:1 to 4:1, attack 20 to 30 ms, 2 or 3 dB, with the side-chain low cut on so the kick doesn’t drive it. Then a touch of saturation.</li><li><b>Clip the peaks.</b> A clipper on the drum bus can take a few dB off the first instant of each hit and you won’t miss it. That’s headroom for the whole mix. Level match and listen for the snare going soft.</li><li><b>Parallel:</b> a smashed copy mixed in quietly makes drums bigger without losing the hit. Turn the Mix knob down on the compressor and you have it in one plugin.</li></ol>
+
+<h2 id="low">How to mix kick, 808 and bass</h2>
+<p>The low end only has room for one thing at a time.</p>
+<ul class="dots"><li><b>Decide who’s lowest.</b> Either the kick owns the bottom and the 808 sits above it, or the other way round. Cut the loser there.</li><li><b>Tune the 808</b> to the song, and shorten notes so they don’t overlap.</li><li><b>Duck it.</b> A compressor on the 808, driven by the kick through its side-chain, fast attack, release about 80 to 120 ms. Two or three dB is often enough.</li><li><b>Make it heard on phones.</b> A phone can’t play 50 Hz. Saturate the lows so there’s something at 150 to 800 Hz, and the ear fills in the rest.</li><li><b>Keep it in mono</b> below about 100 to 120 Hz.</li><li><b>Trust meters down there.</b> Most rooms lie below 100 Hz. Compare the spectrum with your reference, and check on headphones.</li></ul>
+
+<h2 id="space">Width and space</h2>
+<ul class="dots"><li>Kick, snare, 808 and lead voice stay in the middle. Width comes from everything else.</li><li>Pan first. A widener is for when panning isn’t enough.</li><li>Check in mono. If something vanishes, it’s too wide or out of phase.</li><li>Depth is level plus brightness plus reverb. To push a sound back: quieter, darker, wetter.</li><li>Contrast makes a hook feel wide. Keep the verse narrower and drier, and it opens by itself.</li><li>One or two reverbs shared by many tracks sound like one place. Ten different ones sound like ten places.</li></ul>
+
+<h2 id="bus">Mix bus and mastering chain</h2>
+<p>A good mix needs a small master. If you’re doing more than 2 dB of anything here, go back to the track that causes it.</p>
+<dl class="opts"><dt>1. Utility</dt><dd>Mono check, balance, loudness. Fix phase problems before anything else.</dd><dt>2. EQ</dt><dd>Broad moves, 1 or 2 dB. Compare with the reference.</dd><dt>3. Compressor or Multiband</dt><dd>1 to 2 dB of glue, slow attack, auto release. Multiband only if one range misbehaves.</dd><dt>4. Saturation</dt><dd>Barely there. If you can hear it, halve it.</dd><dt>5. Imager</dt><dd>Lows to the middle, a little more width on top if it needs it.</dd><dt>6. Clipper</dt><dd>1 to 3 dB off the tallest peaks, so the limiter works less.</dd><dt>7. Limiter</dt><dd>Ceiling −1 dBTP. Push until it starts to hurt, then come back 1 dB.</dd></dl>
+<p>Mix into a light version of this chain if you like, but do your balance first.</p>
+
+<h2 id="loudness">How to check loudness: LUFS and true peak</h2>
+<h3>The words</h3>
+<dl class="opts"><dt>LUFS</dt><dd>How loud it sounds, measured the way ears hear. <b>Integrated</b> is the whole song, <b>short-term</b> the last 3 seconds, <b>momentary</b> the last 0.4.</dd><dt>True peak, dBTP</dt><dd>The real top of the wave, between the samples too. Leave at least 1 dB, or converters and MP3s can clip.</dd><dt>Dynamics</dt><dd>The distance between peaks and loudness. Under about 6 dB, most music starts to sound flat.</dd></dl>
+<h3>How to measure</h3>
+<ol><li>Put <b>Utility</b> last and set it to measure the output.</li><li>Press reset and play the <b>whole song</b>. Integrated only means something from start to end.</li><li>Read integrated and true peak. Then read short-term in the loudest hook: that’s what people feel.</li><li>Do the same with your reference.</li></ol>
+<h3>Targets</h3>
+<div class="tbl"><table><thead><tr><th>Where</th><th>What happens there</th><th>Aim for</th></tr></thead><tbody>
+<tr><td>Streaming</td><td>Spotify plays songs at −14 LUFS by default. Louder masters are turned down.</td><td>−14 to −9 LUFS<br>−1 dBTP</td></tr>
+<tr><td>Very loud masters</td><td>Spotify asks for −2 dBTP if you’re louder than −14, so the encoder doesn’t distort.</td><td>−2 dBTP</td></tr>
+<tr><td>Club and DJ</td><td>Nothing turns it down, and it sits next to loud records.</td><td>−9 to −7 LUFS</td></tr>
+<tr><td>TV and radio, Europe</td><td>EBU R 128. A rule, not a suggestion.</td><td>−23 LUFS, −1 dBTP</td></tr>
+<tr><td>TV, United States</td><td>ATSC A/85.</td><td>−24 LKFS, −2 dBTP</td></tr>
+</tbody></table></div>
+<p>You don’t have to hit −14. Plenty of hip-hop is mastered around −10 to −8 and gets turned down, which is fine if it still has punch at that level. What isn’t fine is crushing a song to win loudness that streaming takes away again.</p>
+<p><b>The honest test:</b> match your limited master to the mix before it, and compare at the same loudness. The Limiter has a button for it. If the master only sounds better when it’s louder, it isn’t better yet.</p>
+<h3>Don’t forget your own level</h3>
+<p>Mix quietly, about as loud as a conversation, and check loud for a minute at a time. Loud monitoring flatters the bass and tires your ears.</p>
+
+<h2 id="translate">Phones, cars, clubs</h2>
+<dl class="opts"><dt>Phone</dt><dd>Can you follow the bass line and every word? Mono, no lows, harsh mids: it’s a tough judge.</dd><dt>Mono</dt><dd>Does anything disappear? Utility has a button for it.</dd><dt>Car</dt><dd>The low end tells the truth here. Boomy in the car means boomy.</dd><dt>Headphones</dt><dd>Clicks, breaths, bad edits, sharp S.</dd><dt>Next room</dt><dd>Leave the door open and listen from the hall. Voice and snare should still lead.</dd></dl>
+
+<h2 id="fix">Problem, then fix</h2>
+<div class="tbl"><table><thead><tr><th>You hear</th><th>Try</th><th>With</th></tr></thead><tbody>
+<tr><td>Voice sounds far away</td><td>Less reverb, more pre-delay, a little more 3 to 5 kHz</td><td>EQ</td></tr>
+<tr><td>Voice jumps in and out</td><td>Clip gain first, then 2 gentle compressors</td><td>Compressor</td></tr>
+<tr><td>Voice is boomy</td><td>Dynamic dip at 150 to 250 Hz</td><td>EQ, Multiband</td></tr>
+<tr><td>Sharp S</td><td>3 to 5 dB, after the compressor</td><td>De-esser</td></tr>
+<tr><td>Voice buried by the beat</td><td>Dip the music around 2 to 4 kHz, 1 or 2 dB</td><td>EQ</td></tr>
+<tr><td>Muddy mix</td><td>Low cuts on what isn’t bass, then 200 to 400 Hz</td><td>EQ</td></tr>
+<tr><td>Harsh mix</td><td>Find the one track that does it, 2.5 to 5 kHz</td><td>EQ, Multiband</td></tr>
+<tr><td>808 gone on a phone</td><td>Saturate the lows</td><td>Saturation</td></tr>
+<tr><td>Kick and 808 fight</td><td>Duck the 808, choose who’s lowest</td><td>Compressor, EQ</td></tr>
+<tr><td>Limiter pumps</td><td>Clip the drum peaks first, tame the lows</td><td>Clipper, Multiband</td></tr>
+<tr><td>Wide, but thin in mono</td><td>Less width, lows to the middle</td><td>Imager</td></tr>
+<tr><td>Loud, but small</td><td>Less limiting, more contrast</td><td>Limiter</td></tr>
+</tbody></table></div>
+
+<h2 id="habits">Good habits</h2>
+<ul class="dots"><li>Match the level on every before and after. It’s the fastest way to get better.</li><li>Solo to find a problem, then fix it with everything playing.</li><li>Take ten minutes off every hour. Ears get used to anything.</li><li>Bypass every plugin once at the end. Remove the ones you don’t miss.</li><li>Save a new version before big changes, and note what you changed.</li><li>Write down three things that bother you, fix only those, stop.</li><li>Sleep on it. Tomorrow’s first listen is the best one you’ll get.</li></ul>
+
+<h2 id="questions">Questions people ask</h2>
+<h3>What is the right order for plugins on a vocal?</h3>
+<p>A good start is: cut EQ, compressor, de-esser, saturation, boost EQ, then delay and reverb on sends. Cut before you compress so the compressor doesn’t react to what you’re removing, and brighten after it.</p>
+<h3>Should the de-esser go before or after the compressor?</h3>
+<p>Usually after, because compression brings the S up. If one S is so sharp that it drives the compressor, use a light one before as well.</p>
+<h3>EQ before or after compression?</h3>
+<p>Both. Take problems out before, add tone after.</p>
+<h3>How loud should a mix be before mastering?</h3>
+<p>Let it peak around −6 dBFS with nothing on the mix bus that’s only there for loudness. The exact number matters less than not clipping.</p>
+<h3>What LUFS should I master to?</h3>
+<p>Spotify plays at −14 LUFS by default, but you don’t have to hit it. Much hip-hop is around −10 to −8 and gets turned down. Make it as loud as it stays good, with true peak at −1 dBTP or lower.</p>
+<h3>How do I make an 808 heard on a phone?</h3>
+<p>Saturate its lows so it gets harmonics between about 150 and 800 Hz. The phone plays those and the ear fills in the bass.</p>
+<h3>How do I mix vocals over a two-track beat?</h3>
+<p>Turn the beat down first, then dip it 1 or 2 dB around 2 to 4 kHz where the words are, and keep the reverb ducked under the voice. Ride the beat down in busy verses instead of pushing the vocal up.</p>
+<h3>Can I mix with free plugins only?</h3>
+<p>Yes. An EQ, a compressor, a de-esser and a limiter are enough for a finished song. Aemon’s are free, complete and ask for nothing. So are many others.</p>
+
+<h2 id="check">Before you export</h2>
+<ul class="ticks">
+<li><label><input type="checkbox"><span>Every word is clear at low volume</span></label></li>
+<li><label><input type="checkbox"><span>Kick and 808 don’t fight, and the bass line is audible on a phone</span></label></li>
+<li><label><input type="checkbox"><span>Nothing disappears in mono</span></label></li>
+<li><label><input type="checkbox"><span>No sharp S, no clicks, no bad edits on headphones</span></label></li>
+<li><label><input type="checkbox"><span>The hook feels bigger than the verse</span></label></li>
+<li><label><input type="checkbox"><span>It holds up next to a reference at the same loudness</span></label></li>
+<li><label><input type="checkbox"><span>True peak at or under −1 dBTP</span></label></li>
+<li><label><input type="checkbox"><span>Silence trimmed at the start, tails not cut at the end</span></label></li>
+<li><label><input type="checkbox"><span>24-bit WAV at the session’s sample rate. Dither only when going to 16-bit</span></label></li>
+<li><label><input type="checkbox"><span>A clean version, an instrumental and an a cappella, while the session is open</span></label></li>
+</ul>
+<p>Then stop. A finished song beats a perfect one. The <a href="guide.html">user guide</a> explains each plugin.</p>
+<div class="free"><p class="ft">Try the plugins from this guide</p><p>Nine of them, free for Windows (VST3). No login, no email, nothing asked. Use them for paid work too. If you make something, I’d love to hear it.</p><p><a class="cta" href="index.html#download">Download free</a></p></div>
+</article></div>
+</main>
+<footer><div class="w"><p class="legal" style="margin:0;border:0;padding:0"><a href="index.html">Aemon</a> &nbsp; <a href="guide.html">User guide</a> &nbsp; <a href="changelog.html">Changelog</a> &nbsp; Loudness figures: <a href="https://support.spotify.com/artists/article/loudness-normalization/">Spotify</a>, <a href="https://tech.ebu.ch/docs/r/r128.pdf">EBU R 128</a>, ATSC A/85.</p></div></footer>
+</body>
+</html>

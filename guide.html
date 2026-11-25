@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Aemon User Guide</title>
-<meta name="description" content="How to install and use Aemon Utility, EQ, Compressor and Limiter.">
+<title>Aemon user guide: free EQ, compressor, limiter and more</title>
+<meta name="description" content="How to install and use the nine free Aemon plugins: Utility, EQ, De-esser, Compressor, Multiband, Saturation, Imager, Clipper and Limiter.">
+<link rel="canonical" href="https://aemon-audio.github.io/guide.html">
 <meta name="theme-color" content="#14151a">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="site.css">
@@ -16,17 +17,17 @@
 <main id="main" class="w doc">
 <div class="dochead"><h1>User guide</h1><p class="lede">Everything you need to install the plugins and use them well. Each plugin also explains itself: point at a control and read the strip at the bottom.</p></div>
 <div class="docgrid">
-<aside class="toc" aria-label="Contents"><ul><li><a href="#install">Install</a></li><li><a href="#basics">The basics, in all four</a></li><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#limiter">Limiter</a></li><li><a href="#order">A good order</a></li><li><a href="#trouble">If something’s wrong</a></li></ul></aside>
+<aside class="toc" aria-label="Contents"><ul><li><a href="#install">Install</a></li><li><a href="#basics">The basics, in all nine</a></li><li><a href="#utility">Utility</a></li><li><a href="#eq">EQ</a></li><li><a href="#deesser">De-esser</a></li><li><a href="#compressor">Compressor</a></li><li><a href="#multiband">Multiband</a></li><li><a href="#saturation">Saturation</a></li><li><a href="#imager">Imager</a></li><li><a href="#clipper">Clipper</a></li><li><a href="#limiter">Limiter</a></li><li><a href="#order">A good order</a></li><li><a href="#trouble">If something’s wrong</a></li></ul></aside>
 <article>
 
 <h2 id="install">Install</h2>
 <ol><li>Close your DAW and run <b>Aemon-Suite-Setup.exe</b>.</li><li>If Windows says it protected your PC, choose <b>More info</b>, then <b>Run anyway</b>.</li><li>When Windows asks to allow changes to your device, choose <b>Yes</b>.</li><li>Tick the plugins you want and press <b>Install</b>.</li><li>Open your DAW, scan for new plugins, and look for Aemon in the effects list.</li></ol>
 <p><b>Why the warnings?</b> Aemon isn’t signed yet, so Windows can’t show who made it, and it warns about any new app that few people have installed. The second question is there because plugins go in a folder shared by every DAW on the computer. Signing is coming soon. <a href="index.html#install">See pictures of both</a></p>
-<p>The plugins go to <code>C:\Program Files\Common Files\VST3</code>, where every VST3 host looks. To update, run the newer installer. To remove them, use Windows Settings, Apps, <b>Aemon Suite</b>. Your own presets are never touched.</p>
+<p>The plugins go to <code>C:\Program Files\Common Files\VST3</code>, where every VST3 host looks. To update, run the newer installer: it finds what you have, marks it and adds what’s new. To remove them, use Windows Settings, Apps, <b>Aemon Suite</b>. Your own presets are never touched.</p>
 <p><b>No administrator rights?</b> Run <code>Aemon-Suite-Setup.exe /CURRENTUSER</code>. It installs to the per-user VST3 folder, which many DAWs also scan.</p>
 <p><b>By hand:</b> unpack the ZIP and copy the <code>.vst3</code> folders to the folder above.</p>
 
-<h2 id="basics">The basics, in all four</h2>
+<h2 id="basics">The basics, in all nine</h2>
 <h3>Simple and Pro</h3>
 <p>Switch at the top of the window. Both show the same settings, so switching never changes the sound. Simple has a few big controls, live checks in plain words and one-click fixes. Pro has everything.</p>
 <h3>Knobs and numbers</h3>
@@ -54,6 +55,14 @@
 <h3>Pro</h3>
 <dl class="opts"><dt>Shapes</dt><dd>Bell, shelves, cuts, notch, band pass and tilt. Cuts go from 12 to 96 dB per octave.</dd><dt>Dynamic</dt><dd>The band only acts when its own range gets louder than the threshold. Good for harsh words or a boomy note.</dd><dt>Placement</dt><dd>Stereo, left, right, mid or side, per band.</dd><dt>Phase</dt><dd><b>Zero</b> has no latency and is the default. <b>Linear</b> keeps timing between frequencies, and adds about 91 ms (medium) or 176 ms (high). Use it in mastering, rather than while you play.</dd><dt>Auto gain</dt><dd>Keeps the loudness the same so you judge the tone.</dd></dl>
 
+<h2 id="deesser">De-esser</h2>
+<img src="assets/img/deesser-simple.webp" width="1920" height="1200" alt="Aemon De-esser, Simple mode" loading="lazy">
+<p>For sharp S, T and SH sounds. It compares each S with how loud the voice is, so a quiet verse and a loud chorus are treated the same.</p>
+<h3>Simple</h3>
+<p>Play the voice, then press <b>Find my S</b>. It listens back over the last seconds and sets where to work and how much. <b>Amount</b> is how much of the excess is taken away, <b>At most</b> is the deepest cut allowed, so an S never becomes a lisp. <b>Hear only the S</b> plays what it has found. <b>Less</b> takes a fifth off. Voice presets aim themselves at your recording if it has played for a moment first.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Where</dt><dd>The frequency the S starts at, 3 to 12 kHz.</dd><dt>Line</dt><dd>How loud an S may be, against the voice or as a fixed level. Choose which with <b>Voice</b> and <b>Fixed</b>.</dd><dt>Strictness</dt><dd>How sure it must be that it’s an S. Above about 70 % bright vowels can count as one.</dd><dt>Cut</dt><dd><b>Above</b> dips everything above the S, <b>Just S</b> only its own range, <b>Whole</b> the full voice.</dd><dt>Works on</dt><dd>Stereo, the middle or the sides.</dd><dt>Lookahead, Release</dt><dd>How early it starts and how fast it lets go.</dd><dt>Removed</dt><dd>Plays only what is taken away.</dd></dl>
+
 <h2 id="compressor">Compressor</h2>
 <img src="assets/img/compressor-pro.webp" width="1920" height="1200" alt="Aemon Compressor, Pro mode" loading="lazy">
 <p>The left display shows the level and how much it’s being turned down. On the right is the curve: drag the lower handle for the threshold and the upper one for the ratio.</p>
@@ -61,6 +70,38 @@
 <p>Choose a <b>Style</b>, then turn <b>Amount</b> until it sounds controlled. <b>Set amount for me</b> measures what’s playing and aims for about 3 dB on the loud parts. <b>Less pumping</b> slows the release. The check tells you if it’s gentle, moderate or heavy. If you’ve changed something by hand, no style is highlighted.</p>
 <h3>Pro</h3>
 <dl class="opts"><dt>Attack and release</dt><dd>A slow attack lets the hit through. A fast one holds it down. Auto release adapts to the music.</dd><dt>Lookahead</dt><dd>Up to 10 ms, to catch a peak before it arrives. Adds the same latency.</dd><dt>Side-chain high-pass</dt><dd>Stops low end from driving the compression.</dd><dt>Ext SC</dt><dd>Compress from another track. Route that track to the plugin’s side-chain input in your DAW.</dd><dt>Mix</dt><dd>Blends in the uncompressed signal, for parallel compression.</dd><dt>Auto level</dt><dd>Keeps the output as loud as the input.</dd></dl>
+
+<h2 id="multiband">Multiband</h2>
+<img src="assets/img/multiband-pro.webp" width="1920" height="1200" alt="Aemon Multiband, Pro mode" loading="lazy">
+<p>A compressor for each part of the sound. Two to five bands, each turning loud parts down and, if you want, quiet parts up.</p>
+<h3>Simple</h3>
+<p>Choose a goal: <b>Tighter lows</b>, <b>Tame harsh</b>, <b>Even &amp; dense</b> or <b>Glue</b>. Play the loudest part for a few seconds and press <b>Fit to my music</b>: it sets every line so the goal does what it says. <b>Amount</b> scales everything, <b>Mix</b> blends in the uncompressed sound, <b>Less</b> takes a quarter off.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Bands</dt><dd>Two to five. Drag the dividers on the display. 24 or 48 dB per octave.</dd><dt>Down and up</dt><dd>Threshold and ratio for loud parts, and a second pair that raises quiet parts. The up line always stays below the down line, so a band that is compressed most of the time comes up less than the preset asks for.</dd><dt>Phase</dt><dd><b>Natural</b> has no latency. <b>Straight</b> keeps timing between bands and adds latency: use it for mastering.</dd><dt>Solo, On</dt><dd>Hear one band, or leave a band as it is.</dd><dt>Sidechain</dt><dd>Another track drives the bands. Route it to the plugin’s sidechain input in your DAW.</dd><dt>Auto level</dt><dd>Keeps the output as loud as the input.</dd></dl>
+
+<h2 id="saturation">Saturation</h2>
+<img src="assets/img/saturation-pro.webp" width="1920" height="1200" alt="Aemon Saturation, Pro mode" loading="lazy">
+<p>Adds harmonics: warmth, weight, presence or dirt. The level is matched, so you judge the colour.</p>
+<h3>Simple</h3>
+<p>Pick a character, <b>Warm</b>, <b>Thick</b>, <b>Bright</b> or <b>Broken</b>, and what it works on: everything, lows, mids or highs. <b>Set amount for me</b> finds an amount you can notice without it getting harsh. <b>Cleaner</b> backs off 3 dB. Choosing a focus is the quickest way to get an 808 heard on phones without touching the rest.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Drive</dt><dd>How hard the sound is pushed into the curve, up to 30 dB.</dd><dt>Bias</dt><dd>More even harmonics or more odd ones.</dd><dt>Tone</dt><dd>A darker or brighter result.</dd><dt>Mix</dt><dd>Blends in the clean sound, in time, so nothing combs.</dd><dt>Oversampling</dt><dd>8× is the default. Lower is lighter on the CPU and less clean.</dd><dt>Level matched</dt><dd>Keeps the result as loud as the original.</dd></dl>
+
+<h2 id="imager">Imager</h2>
+<img src="assets/img/imager-simple.webp" width="1920" height="1200" alt="Aemon Imager, Simple mode" loading="lazy">
+<p>Makes things wider or narrower. It only touches the difference between left and right, so the mono mix stays the same.</p>
+<h3>Simple</h3>
+<p><b>Width</b> from 0 to 200 %. <b>Low end</b> brings everything below a frequency to the middle. <b>Make stereo</b> opens up a mono sound. <b>Keep it mono-safe</b> holds what a band may lose in mono. <b>Hear it in mono</b> and <b>Only the sides</b> are for listening.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Bands</dt><dd>Four, with a width each. Drag the dividers.</dd><dt>Mono-safe limit</dt><dd>How many dB a band may lose on a mono speaker.</dd><dt>Centre</dt><dd>Pulls a lopsided sound back to the middle. <b>Centre it</b> measures and sets it.</dd><dt>Quality</dt><dd><b>Straight</b> adds 48 ms and has the cleanest bands. <b>Zero delay</b> is for playing live.</dd><dt>Equal loudness</dt><dd>For comparing while you listen. Exports ignore it.</dd></dl>
+
+<h2 id="clipper">Clipper</h2>
+<img src="assets/img/clipper-pro.webp" width="1920" height="1200" alt="Aemon Clipper, Pro mode" loading="lazy">
+<p>Cuts the tallest peaks. Use it before the limiter, or on drums.</p>
+<h3>Simple</h3>
+<p><b>Push</b> drives the peaks over the ceiling, <b>Softness</b> sets how gently they bend, <b>Ceiling</b> is the highest level. <b>Shave the peaks for me</b> finds how much you can take off before you’d hear it. <b>Less</b> backs off 2 dB. <b>Compare at equal loudness</b> plays the result as loud as the original.</p>
+<h3>Pro</h3>
+<dl class="opts"><dt>Shape</dt><dd><b>Hard</b>, <b>Round</b> and <b>Soft</b> set the softness.</dd><dt>Stereo link</dt><dd>At 100 % both sides are cut together, so the image stays put.</dd><dt>Mix</dt><dd>Blends in the sound before clipping. Below 100 % peaks can pass the ceiling.</dd><dt>Oversampling</dt><dd>8× is the default and the cleanest.</dd><dt>Hear removed</dt><dd>Plays exactly what is cut.</dd></dl>
 
 <h2 id="limiter">Limiter</h2>
 <img src="assets/img/limiter-pro.webp" width="1920" height="1200" alt="Aemon Limiter, Pro mode" loading="lazy">
@@ -71,10 +112,10 @@
 <dl class="opts"><dt>Push</dt><dd>How hard you drive into the limiter.</dd><dt>Ceiling</dt><dd>The highest the output can go. −1 dBTP is the safe choice for streaming.</dd><dt>Style</dt><dd>Sets the release: Clean for mastering, Punchy for drums, Dense for loud modern masters, Safe for gentle protection. Turn Release yourself and no style is highlighted.</dd><dt>Lookahead</dt><dd>Sees peaks coming. Changing it changes the latency, so the sound fades for a moment.</dd><dt>True peak</dt><dd>Catches peaks between the samples, at 2×, 4× or 8×. 4× is a good default.</dd><dt>Hear removed</dt><dd>Plays only what the limiter takes away.</dd><dt>Dither</dt><dd>16-bit or 24-bit, only on your final export.</dd></dl>
 
 <h2 id="order">A good order</h2>
-<p>On the master: <b>Utility</b> to check mono and level, <b>EQ</b> to fix the balance, <b>Compressor</b> for 1 to 2 dB of glue, <b>Limiter</b> last. On a track: Utility, EQ, Compressor. Trust your ears over the order.</p>
+<p>On the master: <b>Utility</b> to check mono and level, <b>EQ</b> to fix the balance, <b>Compressor</b> or <b>Multiband</b> for a little glue, a touch of <b>Saturation</b>, <b>Imager</b> for width, <b>Clipper</b> to shave the peaks, <b>Limiter</b> last. On a voice: Utility, EQ, Compressor, De-esser, Saturation. You’ll rarely need all of them. Trust your ears over the order. New to mixing? Read <a href="mixing-guide.html">Mixing, start to finish</a>.</p>
 
 <h2 id="trouble">If something’s wrong</h2>
-<dl class="opts"><dt>The plugins don’t show up</dt><dd>Scan again in your DAW, and make sure it’s a 64-bit host that loads VST3.</dd><dt>Setup says a plugin is open</dt><dd>Save your project, close your DAW and press Retry. Setup never closes programs for you.</dd><dt>The sound is delayed</dt><dd>Linear phase, lookahead and the limiter add latency. Your DAW compensates during playback. Use zero-latency modes while recording.</dd><dt>Still stuck?</dt><dd>Report it on GitHub, or write to me. The links are at the bottom of the <a href="index.html">main page</a>.</dd></dl>
+<dl class="opts"><dt>The plugins don’t show up</dt><dd>Scan again in your DAW, and make sure it’s a 64-bit host that loads VST3.</dd><dt>Setup says a plugin is open</dt><dd>Save your project, close your DAW and press Retry. Setup never closes programs for you.</dd><dt>The sound is delayed</dt><dd>Linear and straight phase, lookahead, oversampling and the limiter add latency. Your DAW compensates during playback. Use zero-latency modes while recording.</dd><dt>Still stuck?</dt><dd>Report it on GitHub, or write to me. The links are at the bottom of the <a href="index.html">main page</a>.</dd></dl>
 </article></div>
 </main>
 <footer><div class="w"><p class="legal" style="margin:0;border:0;padding:0"><a href="index.html">Aemon</a> &nbsp; <a href="changelog.html">Changelog</a> &nbsp; <a href="signing.html">Code signing and privacy</a></p></div></footer>
